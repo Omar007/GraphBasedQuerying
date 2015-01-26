@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Core.Common;
+using System.Data.Entity.Core.Common.CommandTrees;
+using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Data.Entity.Core.Mapping;
 using System.Data.Entity.Core.Metadata.Edm;
 using System.Diagnostics;
@@ -36,6 +39,58 @@ namespace EntityGraph4EF6.Mapping
 
             ProcessAssociationSets(containerMapping.ConceptualEntityContainer.AssociationSets, containerMapping.AssociationSetMappings, getClrType, typeMappings);
 
+
+
+            //var set = containerMapping.StoreEntityContainer.EntitySets.ElementAt(2);
+            //var table = DbExpressionBuilder.Bind(DbExpressionBuilder.Scan(set));
+            ////var where = DbExpressionBuilder.Equal(
+            ////    DbExpressionBuilder.Property(table.Variable, set.ElementType.Properties.First()),
+            ////    DbExpressionBuilder.Constant(23)
+            ////);
+            ////var whereOnTable = DbExpressionBuilder.Bind(DbExpressionBuilder.Filter(table, where));
+            ////var project = DbExpressionBuilder.Project(whereOnTable, DbExpressionBuilder.NewRow(
+            ////    set.ElementType.Properties.Select(x =>
+            ////    {
+            ////        var propDbExpr = DbExpressionBuilder.Property(whereOnTable.Variable, x);
+            ////        return new KeyValuePair<string, DbExpression>(propDbExpr.Property.Name, propDbExpr);
+            ////    })
+            ////));
+
+
+            //var joinSet = containerMapping.StoreEntityContainer.EntitySets.ElementAt(1);
+            //var joinTable = DbExpressionBuilder.Bind(DbExpressionBuilder.Scan(joinSet));
+            //var join = DbExpressionBuilder.Bind(
+            //    DbExpressionBuilder.InnerJoin(
+            //        table,
+            //        joinTable,
+            //        DbExpressionBuilder.Equal(
+            //            DbExpressionBuilder.Property(table.Variable, set.ElementType.Properties.First()),
+            //            DbExpressionBuilder.Property(joinTable.Variable, joinSet.ElementType.Properties.Last())
+            //        )
+            //    )
+            //);
+            //var where = DbExpressionBuilder.Equal(
+            //    DbExpressionBuilder.Property(DbExpressionBuilder.Property(join.Variable, table.VariableName), set.ElementType.Properties.First()),
+            //    DbExpressionBuilder.Constant(23)
+            //);
+            //var whereOnJoin = DbExpressionBuilder.Bind(DbExpressionBuilder.Filter(join, where));
+            //var project = DbExpressionBuilder.Project(whereOnJoin, DbExpressionBuilder.NewRow(
+            //    joinSet.ElementType.Properties.Select(x =>
+            //    {
+            //        var propDbExpr = DbExpressionBuilder.Property(DbExpressionBuilder.Property(whereOnJoin.Variable, joinTable.VariableName), x);
+            //        return new KeyValuePair<string, DbExpression>(propDbExpr.Property.Name, propDbExpr);
+            //    })
+            //));
+
+            //var commandTree = new DbQueryCommandTree(context.GetObjectContext().MetadataWorkspace, DataSpace.SSpace, project);
+            //var commandDef = DbProviderServices.GetProviderServices(context.Database.Connection).CreateCommandDefinition(commandTree);
+            //var command = commandDef.CreateCommand();
+            //command.Connection = context.Database.Connection;
+            //command.Connection.Open();
+            //var er = command.ExecuteReader();
+
+
+
             return typeMappings;
         }
 
@@ -66,29 +121,25 @@ namespace EntityGraph4EF6.Mapping
 
             foreach (var mappingFragment in fragments)
             {
-                var tableName = mappingFragment.StoreEntitySet.Table ?? mappingFragment.StoreEntitySet.Name;
-                var propMappings = ProcessFragmentPropertyMappings(type, mappingFragment.PropertyMappings.OfType<ScalarPropertyMapping>(), tableName);
+                var propMappings = ProcessFragmentPropertyMappings(type, mappingFragment.PropertyMappings.OfType<ScalarPropertyMapping>(), mappingFragment.StoreEntitySet);
 
-                tableMappings.Add(new TableMapping(tableName, propMappings));
+                tableMappings.Add(new TableMapping(mappingFragment.StoreEntitySet, propMappings));
             }
 
             return tableMappings;
         }
 
-        private static IEnumerable<PropertyMapping> ProcessFragmentPropertyMappings(Type type, IEnumerable<ScalarPropertyMapping> propertyMappings, string tableName)
+        private static IEnumerable<PropertyMapping> ProcessFragmentPropertyMappings(Type type, IEnumerable<ScalarPropertyMapping> propertyMappings, EntitySetBase entitySet)
         {
             var propMappings = new List<PropertyMapping>();
 
             foreach (var propertyMapping in propertyMappings)
             {
-                var propertyName = propertyMapping.Property.Name;
-                var columnName = propertyMapping.Column.Name;
-
                 //TODO: Cleaner way to get this information?
                 var isPrimaryKeyProperty = typeof(EdmProperty).GetProperty("IsPrimaryKeyColumn", BindingFlags.NonPublic | BindingFlags.Instance);
                 bool isPrimaryKey = (bool)isPrimaryKeyProperty.GetValue(propertyMapping.Column);
 
-                propMappings.Add(new PropertyMapping(type.GetProperty(propertyName), columnName, isPrimaryKey, tableName));
+                propMappings.Add(new PropertyMapping(entitySet, propertyMapping.Column, type.GetProperty(propertyMapping.Property.Name), isPrimaryKey));
             }
 
             return propMappings;
@@ -124,18 +175,18 @@ namespace EntityGraph4EF6.Mapping
             var sourceTypeMapping = typeMappings.Single(tm => tm.Type == sourceType);
             var targetTypeMapping = typeMappings.Single(tm => tm.Type == targetType);
 
-            var sourcePropMappings = new List<string>();
+            var sourcePropMappings = new List<EdmProperty>();
             foreach (var prop in constraint.FromProperties)
             {
                 var propMapping = sourceTypeMapping.Properties.Single(p => p.Property != null && p.Property.Name == prop.Name);
-                sourcePropMappings.Add(propMapping.ColumnName);
+                sourcePropMappings.Add(propMapping.ColumnProperty);
             }
 
-            var targetPropMappings = new List<string>();
+            var targetPropMappings = new List<EdmProperty>();
             foreach (var prop in constraint.ToProperties)
             {
                 var propMapping = targetTypeMapping.Properties.Single(p => p.Property != null && p.Property.Name == prop.Name);
-                targetPropMappings.Add(propMapping.ColumnName);
+                targetPropMappings.Add(propMapping.ColumnProperty);
             }
 
             var assocMapping = new AssociationMapping(sourceTypeMapping, sourcePropMappings, targetTypeMapping, targetPropMappings);
@@ -154,22 +205,22 @@ namespace EntityGraph4EF6.Mapping
             var sourceTypeMapping = typeMappings.Single(tm => tm.Type == sourceType);
             var targetTypeMapping = typeMappings.Single(tm => tm.Type == targetType);
 
-            var propMappingsSource = new Dictionary<string, string>();
+            var propMappingsSource = new Dictionary<EdmProperty, EdmProperty>();
             foreach (var propertyMapping in sourceEndMapping.PropertyMappings)
             {
                 var propMapping = sourceTypeMapping.Properties.Single(p => p.Property != null && p.Property.Name == propertyMapping.Property.Name);
-                propMappingsSource.Add(propertyMapping.Column.Name, propMapping.ColumnName);
+                propMappingsSource.Add(propertyMapping.Column, propMapping.ColumnProperty);
             }
-            var propMappingsTarget = new Dictionary<string, string>();
+            var propMappingsTarget = new Dictionary<EdmProperty, EdmProperty>();
             foreach (var propertyMapping in targetEndMapping.PropertyMappings)
             {
                 var propMapping = targetTypeMapping.Properties.Single(p => p.Property != null && p.Property.Name == propertyMapping.Property.Name);
-                propMappingsTarget.Add(propertyMapping.Column.Name, propMapping.ColumnName);
+                propMappingsTarget.Add(propertyMapping.Column, propMapping.ColumnProperty);
             }
 
-            var mappedTableName = associationMapping.StoreEntitySet.Table ?? associationMapping.StoreEntitySet.Name;
-            var mapsToSource = sourceTypeMapping.TableMappings.Any(spm => spm.TableName == mappedTableName);
-            var mapsToTarget = targetTypeMapping.TableMappings.Any(spm => spm.TableName == mappedTableName);
+            var mappedTable = associationMapping.StoreEntitySet;
+            var mapsToSource = sourceTypeMapping.TableMappings.Any(spm => spm.EntitySet == mappedTable);
+            var mapsToTarget = targetTypeMapping.TableMappings.Any(spm => spm.EntitySet == mappedTable);
 
             Debug.Assert((!mapsToSource && !mapsToTarget) || (!mapsToSource && mapsToTarget) || (mapsToSource && mapsToTarget));
 
@@ -177,7 +228,7 @@ namespace EntityGraph4EF6.Mapping
             if (!mapsToSource && !mapsToTarget)
             {
                 var assocMapping = new AssociationMapping_M2M(sourceTypeMapping, propMappingsSource.Values.ToList(),
-                    targetTypeMapping, propMappingsTarget.Values.ToList(), mappedTableName,
+                    targetTypeMapping, propMappingsTarget.Values.ToList(), mappedTable,
                     propMappingsSource.Keys.ToList(), propMappingsTarget.Keys.ToList());
                 sourceTypeMapping.AddAssociationMapping(assocMapping);
                 targetTypeMapping.AddAssociationMapping(assocMapping.Reverse());

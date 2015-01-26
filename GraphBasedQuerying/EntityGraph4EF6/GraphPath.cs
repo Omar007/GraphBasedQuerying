@@ -66,7 +66,7 @@ namespace EntityGraph4EF6
 
             if (edge.EdgeInfo.DeclaringType != edge.FromType)
             {
-                var node = new GraphPathNode(null, path[0].OutEdge, shape.GetTypeMapping(edge.EdgeInfo.DeclaringType), shape.Context);
+                var node = new GraphPathNode(null, path.First().OutEdge, shape.GetTypeMapping(edge.EdgeInfo.DeclaringType), shape.Context);
                 path.Insert(node);
             }
 

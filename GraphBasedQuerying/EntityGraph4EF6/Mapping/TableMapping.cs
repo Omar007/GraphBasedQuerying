@@ -1,31 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Data.Entity.Core.Metadata.Edm;
 using System.Linq;
 
 namespace EntityGraph4EF6.Mapping
 {
     internal class TableMapping
     {
-        public string TableName { get; private set; }
-        public IEnumerable<PropertyMapping> PropertyMappings { get; private set; }
+        public EntitySetBase EntitySet { get; private set; }
 
+        public IEnumerable<PropertyMapping> PropertyMappings { get; private set; }
         public IEnumerable<PropertyMapping> PrimaryKeyMappings { get; private set; }
         public IEnumerable<PropertyMapping> NonPrimaryKeyMappings { get; private set; }
 
-        public TableMapping(string tableName, IEnumerable<PropertyMapping> propertyMappings)
+        public TableMapping(EntitySetBase entitySet, IEnumerable<PropertyMapping> propertyMappings)
         {
-            TableName = tableName;
+            EntitySet = entitySet;
             PropertyMappings = propertyMappings;
 
             PrimaryKeyMappings = PropertyMappings.Where(pm => pm.IsPrimaryKey).ToList();
             NonPrimaryKeyMappings = PropertyMappings.Where(pm => !pm.IsPrimaryKey).ToList();
-        }
-
-        public override string ToString()
-        {
-            return String.Format("SELECT {0} FROM {1}",
-                String.Join(", ", PropertyMappings.Select(pm => pm.ToString())),
-                TableName);
         }
 
         public override bool Equals(object obj)
@@ -36,12 +29,12 @@ namespace EntityGraph4EF6.Mapping
                 return false;
             }
 
-            return other.TableName.Equals(TableName) && Enumerable.SequenceEqual(other.PropertyMappings, PropertyMappings);
+            return other.EntitySet.Equals(EntitySet) && Enumerable.SequenceEqual(other.PropertyMappings, PropertyMappings);
         }
 
         public override int GetHashCode()
         {
-            return TableName.GetHashCode() ^ PropertyMappings.Aggregate(0, (baseValue, pm) => baseValue ^ pm.GetHashCode());
+            return EntitySet.GetHashCode() ^ PropertyMappings.Aggregate(0, (baseValue, pm) => baseValue ^ pm.GetHashCode());
         }
     }
 }

@@ -1,72 +1,101 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity.Core.Common.CommandTrees;
+using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
+using System.Data.Entity.Core.Metadata.Edm;
+using System.Diagnostics;
 using System.Linq;
-using EntityGraph4EF6.SQL;
+using System.Linq.Expressions;
+using EntityGraph4EF6.Mapping;
 
 namespace EntityGraph4EF6
 {
     internal static class GraphPathExtensions
     {
-        public static SelectColumns ToSql(this GraphPath graphPath, WhereExpr whereExpr)
+        public static DbExpression ToDbExpression<T>(this GraphPath graphPath, TypeMapping whereTypeMapping, Expression<Func<T, bool>> whereExpr)
+            where T : class
         {
             var startNode = graphPath.First();
             var endNode = graphPath.Last();
 
             Debug.Assert(startNode != endNode);
 
-            InnerJoin fullJoinSequence = null;
+            DbExpressionBinding fullJoinSequence = null;
             for (int i = 1; i < graphPath.Count(); i++)
             {
-                InnerJoin join = null;
+                DbJoinExpression join = null;
                 var node = graphPath[i];
                 if (node.InEdge == null)
                 {
-                    join = Inheritance2Sql(graphPath[i - 1], node);
+                    join = Inheritance2DbExpression(graphPath[i - 1], node);
                 }
                 else
                 {
-                    join = Association2Sql(graphPath.GetOwningNode(node), node);
+                    join = Association2DbExpression(graphPath.GetOwningNode(node), node);
                 }
 
-                fullJoinSequence = fullJoinSequence == null ? join : new InnerJoin(fullJoinSequence, join.JoinTable, join.OnExpression);
+                fullJoinSequence = fullJoinSequence == null
+                    ? DbExpressionBuilder.Bind(join)
+                    : DbExpressionBuilder.Bind(DbExpressionBuilder.InnerJoin(fullJoinSequence, join.Right, join.JoinCondition));
             }
 
-            return endNode.TypeMapping.GetSelectColumns(whereExpr, fullJoinSequence);
+            if (whereExpr != null)
+            {
+                var visitor = new Expression2DbExpressionVisitor(whereTypeMapping, fullJoinSequence.Variable);
+                visitor.Visit(whereExpr);
+                fullJoinSequence = DbExpressionBuilder.BindAs(DbExpressionBuilder.Filter(fullJoinSequence, visitor.DbExpression), fullJoinSequence.VariableName);
+            }
+
+            var columns = new Dictionary<string, DbExpression>();
+            foreach (var pk in endNode.TypeMapping.PrimaryKeys)
+            {
+                columns.Add(pk.ColumnProperty.Name, DbExpressionBuilder.Property(
+                    //fullJoinSequence.Variable,
+                    DbExpressionBuilder.Variable(TypeUsage.CreateDefaultTypeUsage(pk.EntitySet.ElementType), pk.EntitySet.Table),
+                    pk.ColumnProperty));
+            }
+            foreach (var sel in endNode.TypeMapping.GetHierarchyColumns())
+            {
+                columns.Add(sel.Key, sel.Value);
+            }
+            var whenThens = endNode.TypeMapping.GetHierarchyWhen(String.Empty);
+            columns.Add(TypeMapping.TypeColumn, DbExpressionBuilder.Case(
+                whenThens.Keys, whenThens.Values,
+                DbExpressionBuilder.Null(TypeUsage.CreateStringTypeUsage(PrimitiveType.GetEdmPrimitiveType(PrimitiveTypeKind.String), true, false))
+            ));
+
+            return DbExpressionBuilder.Project(fullJoinSequence, DbExpressionBuilder.NewRow(columns));
         }
 
-        private static InnerJoin Inheritance2Sql(GraphPathNode leftNode, GraphPathNode rightNode)
+        private static DbJoinExpression Inheritance2DbExpression(GraphPathNode leftNode, GraphPathNode rightNode)
         {
-            var left = leftNode.TypeMapping;
-            var right = rightNode.TypeMapping;
+            var leftTableMapping = leftNode.TypeMapping.TableMappings.First();
+            var rightTableMapping = rightNode.TypeMapping.TableMappings.First();
 
-            var leftTableMapping = left.TableMappings.First();
-            var rightTableMapping = right.TableMappings.First();
+            var leftColumns = leftTableMapping.PrimaryKeyMappings.Select(pkm => pkm.ColumnProperty).ToList();
+            var rightColumns = rightTableMapping.PrimaryKeyMappings.Select(pkm => pkm.ColumnProperty).ToList();
 
-            var leftColumns = leftTableMapping.PrimaryKeyMappings.Select(pkm => pkm.ColumnName).ToList();
-            var rightColumns = rightTableMapping.PrimaryKeyMappings.Select(pkm => pkm.ColumnName).ToList();
+            var leftTableDbExpr = DbExpressionBuilder.Bind(DbExpressionBuilder.Scan(leftTableMapping.EntitySet));
+            var rightTableDbExpr = DbExpressionBuilder.Bind(DbExpressionBuilder.Scan(rightTableMapping.EntitySet));
 
-            BinaryExpr condition = null;
+            DbExpression condition = null;
             for (int i = 0; i < leftColumns.Count; i++)
             {
-                var leftColumn = leftColumns[i];
-                var rightColumn = rightColumns[i];
+                var expr = DbExpressionBuilder.Equal(
+                    DbExpressionBuilder.Property(leftTableDbExpr.Variable, leftColumns[i]),
+                    DbExpressionBuilder.Property(rightTableDbExpr.Variable, rightColumns[i])
+                );
 
-                EqualExpr expr = new EqualExpr(
-                    new ColumnExpr(new Column(leftTableMapping.TableName, leftColumn)),
-                    new ColumnExpr(new Column(rightTableMapping.TableName, rightColumn)));
-
-                condition = condition == null ? (BinaryExpr)expr : new AndExpr(condition, expr);
+                condition = condition == null ? (DbExpression)expr : DbExpressionBuilder.And(condition, expr);
             }
 
-            var leftTable = new Table(leftTableMapping.TableName);
-            var rightTable = new Table(rightTableMapping.TableName);
-            return new InnerJoin(leftTable, rightTable, condition);
+            return DbExpressionBuilder.InnerJoin(leftTableDbExpr, rightTableDbExpr, condition);
         }
 
-        private static InnerJoin Association2Sql(GraphPathNode leftNode, GraphPathNode rightNode)
+        private static DbJoinExpression Association2DbExpression(GraphPathNode leftNode, GraphPathNode rightNode)
         {
             var leftMapping = leftNode.TypeMapping;
             var rightMapping = rightNode.TypeMapping;
-
             var association = leftMapping.AssociationMappings.Single(am => am.Target == rightMapping);
 
             return association.GetJoin();

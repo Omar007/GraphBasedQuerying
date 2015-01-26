@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.Diagnostics;
+using System.Data.Entity.Core.Common.CommandTrees;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Reflection;
 using EntityGraph;
 using EntityGraph4EF6.Mapping;
-using EntityGraph4EF6.SQL;
 
 namespace EntityGraph4EF6
 {
@@ -67,7 +65,7 @@ namespace EntityGraph4EF6
         //}
 
         public void Load<T>()
-            where T : TEntity
+            where T : class, TEntity
         {
             var type = typeof(T);
             if (!_cache.ContainsKey(type))
@@ -80,53 +78,55 @@ namespace EntityGraph4EF6
         }
 
         private void LoadPaths<T>(IEnumerable<GraphPath> paths)
+            where T : class, TEntity
         {
             var typeMapping = GetTypeMapping(typeof(T));
-            var typeMappings = new List<TypeMapping>() { typeMapping };
-            var queries = new List<SelectColumns>() { typeMapping.GetSelectColumns(null) };
+            var queryData = new Dictionary<DbExpression, TypeMapping>();
+            queryData.Add(typeMapping.ToDbExpression<T>(null), typeMapping);
 
             foreach (var path in paths)
             {
-                queries.Add(path.ToSql(null));
-                typeMappings.Add(path.Last().TypeMapping);
+                queryData.Add(path.ToDbExpression<T>(typeMapping, null), path.Last().TypeMapping);
             }
 
-            var queryPlan = new QueryPlan(queries, typeMappings);
+            var queryPlan = new QueryPlan(Context, queryData);
+
             _cache.Add(typeof(T), queryPlan);
         }
 
         public void Load<T>(Expression<Func<T, bool>> expr)
             where T : class, TEntity
         {
-            var type = typeof(T);
-            var whereExpr = new LoadWhereExpr<T>(_typeMappings.Single(tm => tm.Type == type), expr);
+            //var type = typeof(T);
+            
+            //if (!_cache.ContainsKey(type))
+            //{
+            //    var paths = GraphPathCollection.Where(p => p.IsMatchingForType(type)).ToList();
+            //    if (paths.Any())
+            //    {
+            //        LoadPaths(expr, paths);
+            //    }
+            //}
 
-            if (!_cache.ContainsKey(type))
-            {
-                var paths = GraphPathCollection.Where(p => p.IsMatchingForType(type)).ToList();
-                if (paths.Any())
-                {
-                    LoadPaths(whereExpr, paths);
-                }
-            }
+            //Context.ExecuteQueryPlan(_cache[type]);
 
-            Context.ExecuteQueryPlan(_cache[type]);
+            Load<T>();
         }
 
-        private void LoadPaths<T>(LoadWhereExpr<T> expr, IEnumerable<GraphPath> paths)
+        private void LoadPaths<T>(Expression<Func<T, bool>> expr, IEnumerable<GraphPath> paths)
             where T : class, TEntity
         {
             var typeMapping = GetTypeMapping(typeof(T));
-            var typeTrees = new List<TypeMapping>() { typeMapping };
-            var queries = new List<SelectColumns>() { typeMapping.GetSelectColumns(expr.Condition) };
+
+            var queryData = new Dictionary<DbExpression, TypeMapping>();
+            queryData.Add(typeMapping.ToDbExpression(expr), typeMapping);
 
             foreach (var path in paths)
             {
-                queries.Add(path.ToSql(expr.Condition));
-                typeTrees.Add(path.Last().TypeMapping);
+                queryData.Add(path.ToDbExpression(typeMapping, expr), path.Last().TypeMapping);
             }
 
-            var queryPlan = new QueryPlan(queries, typeTrees);
+            var queryPlan = new QueryPlan(Context, queryData);
             _cache.Add(typeof(T), queryPlan);
         }
 

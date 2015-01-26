@@ -1,16 +1,18 @@
 ﻿using System.Collections.Generic;
+using System.Data.Entity.Core.Common.CommandTrees;
+using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
+using System.Data.Entity.Core.Metadata.Edm;
 using System.Diagnostics;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using EntityGraph4EF6.Mapping;
-using EntityGraph4EF6.SQL;
 
 namespace EntityGraph4EF6
 {
-    internal class Expression2SqlVisitor : ExpressionVisitor
+    internal class Expression2DbExpressionVisitor : ExpressionVisitor
     {
-        public Expr SqlExpression
+        public DbExpression DbExpression
         {
             get
             {
@@ -19,13 +21,16 @@ namespace EntityGraph4EF6
             }
         }
 
-        private readonly Stack<Expr> _sqlExprStack;
+        private readonly Stack<DbExpression> _sqlExprStack;
         private readonly TypeMapping _typeMapping;
+        private readonly DbVariableReferenceExpression _tableVar;
 
-        public Expression2SqlVisitor(TypeMapping typeMapping)
+        public Expression2DbExpressionVisitor(TypeMapping typeMapping, DbVariableReferenceExpression tableVar)
         {
             _typeMapping = typeMapping;
-            _sqlExprStack = new Stack<Expr>();
+            _tableVar = tableVar;
+
+            _sqlExprStack = new Stack<DbExpression>();
         }
 
         protected override Expression VisitConditional(ConditionalExpression node)
@@ -43,41 +48,41 @@ namespace EntityGraph4EF6
             {
                 case ExpressionType.AndAlso:
                     returnValue = base.VisitBinary(node);
-                    _sqlExprStack.Push(new AndExpr(_sqlExprStack.Pop(), _sqlExprStack.Pop()));
+                    _sqlExprStack.Push(DbExpressionBuilder.And(_sqlExprStack.Pop(), _sqlExprStack.Pop()));
                     break;
                 case ExpressionType.OrElse:
                     returnValue = base.VisitBinary(node);
-                    _sqlExprStack.Push(new OrExpr(_sqlExprStack.Pop(), _sqlExprStack.Pop()));
+                    _sqlExprStack.Push(DbExpressionBuilder.Or(_sqlExprStack.Pop(), _sqlExprStack.Pop()));
                     break;
                 case ExpressionType.Equal:
                     returnValue = base.VisitBinary(node);
-                    _sqlExprStack.Push(new EqualExpr((UnaryExpr)_sqlExprStack.Pop(), (UnaryExpr)_sqlExprStack.Pop()));
+                    _sqlExprStack.Push(DbExpressionBuilder.Equal(_sqlExprStack.Pop(), _sqlExprStack.Pop()));
                     break;
                 case ExpressionType.NotEqual:
                     returnValue = base.VisitBinary(node);
-                    _sqlExprStack.Push(new NotEqualExpr((UnaryExpr)_sqlExprStack.Pop(), (UnaryExpr)_sqlExprStack.Pop()));
+                    _sqlExprStack.Push(DbExpressionBuilder.NotEqual(_sqlExprStack.Pop(), _sqlExprStack.Pop()));
                     break;
                 case ExpressionType.GreaterThan:
                     returnValue = base.VisitBinary(node);
-                    _sqlExprStack.Push(new GreaterThenExpr((UnaryExpr)_sqlExprStack.Pop(), (UnaryExpr)_sqlExprStack.Pop()));
+                    _sqlExprStack.Push(DbExpressionBuilder.GreaterThan(_sqlExprStack.Pop(), _sqlExprStack.Pop()));
                     break;
                 case ExpressionType.GreaterThanOrEqual:
                     returnValue = base.VisitBinary(node);
-                    _sqlExprStack.Push(new GreaterThenEqualExpr((UnaryExpr)_sqlExprStack.Pop(), (UnaryExpr)_sqlExprStack.Pop()));
+                    _sqlExprStack.Push(DbExpressionBuilder.GreaterThanOrEqual(_sqlExprStack.Pop(), _sqlExprStack.Pop()));
                     break;
                 case ExpressionType.LessThan:
                     returnValue = base.VisitBinary(node);
-                    _sqlExprStack.Push(new LessThenExpr((UnaryExpr)_sqlExprStack.Pop(), (UnaryExpr)_sqlExprStack.Pop()));
+                    _sqlExprStack.Push(DbExpressionBuilder.LessThan(_sqlExprStack.Pop(), _sqlExprStack.Pop()));
                     break;
                 case ExpressionType.LessThanOrEqual:
                     returnValue = base.VisitBinary(node);
-                    _sqlExprStack.Push(new LessThenEqualExpr((UnaryExpr)_sqlExprStack.Pop(), (UnaryExpr)_sqlExprStack.Pop()));
+                    _sqlExprStack.Push(DbExpressionBuilder.LessThanOrEqual(_sqlExprStack.Pop(), _sqlExprStack.Pop()));
                     break;
 
                 default: //TODO: Verify this default case.
                     returnValue = node;
                     var value = Expression.Lambda(node).Compile().DynamicInvoke();
-                    _sqlExprStack.Push(new ConstantExpr(value));
+                    _sqlExprStack.Push(DbExpressionBuilder.Constant(value));
                     break;
             }
 
@@ -87,7 +92,7 @@ namespace EntityGraph4EF6
         protected override Expression VisitConstant(ConstantExpression node)
         {
             var value = Expression.Lambda(node).Compile().DynamicInvoke();
-            _sqlExprStack.Push(new ConstantExpr(value));
+            _sqlExprStack.Push(DbExpressionBuilder.Constant(value));
 
             return node;
         }
@@ -95,7 +100,7 @@ namespace EntityGraph4EF6
         protected override Expression VisitMethodCall(MethodCallExpression node)
         {
             var value = Expression.Lambda(node).Compile().DynamicInvoke();
-            _sqlExprStack.Push(new ConstantExpr(value));
+            _sqlExprStack.Push(DbExpressionBuilder.Constant(value));
 
             return node;
         }
@@ -108,12 +113,12 @@ namespace EntityGraph4EF6
                 var tableMapping = _typeMapping.TableMappings.First(tm => tm.PropertyMappings.Any(pm => pm.Property == propInfo));
                 var propMapping = tableMapping.PropertyMappings.Single(pm => pm.Property == propInfo);
 
-                _sqlExprStack.Push(new ColumnExpr(new Column(tableMapping.TableName, propMapping.ColumnName)));
+                _sqlExprStack.Push(DbExpressionBuilder.Property(_tableVar, propMapping.ColumnProperty));
             }
             else
             {
                 var value = Expression.Lambda(node).Compile().DynamicInvoke();
-                _sqlExprStack.Push(new ConstantExpr(value));
+                _sqlExprStack.Push(DbExpressionBuilder.Constant(value));
             }
 
             return node;

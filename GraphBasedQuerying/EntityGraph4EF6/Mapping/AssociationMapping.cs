@@ -1,22 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Common.CommandTrees;
+using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
+using System.Data.Entity.Core.Metadata.Edm;
 using System.Diagnostics;
 using System.Linq;
-using EntityGraph4EF6.SQL;
 
 namespace EntityGraph4EF6.Mapping
 {
     internal class AssociationMapping
     {
         public TypeMapping Source { get; private set; }
-        public IEnumerable<string> SourceColumns { get; private set; }
+        public IEnumerable<EdmProperty> SourceColumns { get; private set; }
 
         public TypeMapping Target { get; private set; }
-        public IEnumerable<string> TargetColumns { get; private set; }
+        public IEnumerable<EdmProperty> TargetColumns { get; private set; }
 
         //Source is the type with the PK. Target is the type with the FK.
-        public AssociationMapping(TypeMapping source, IEnumerable<string> sourceColumns,
-            TypeMapping target, IEnumerable<string> targetColumns)
+        public AssociationMapping(TypeMapping source, IEnumerable<EdmProperty> sourceColumns,
+            TypeMapping target, IEnumerable<EdmProperty> targetColumns)
         {
             Source = source;
             SourceColumns = sourceColumns;
@@ -28,25 +30,26 @@ namespace EntityGraph4EF6.Mapping
         }
 
         //TODO: Account for self-reference associations
-        public virtual InnerJoin GetJoin()
+        public virtual DbJoinExpression GetJoin()
         {
-            var sourcePropsTableName = Source.TableMappings.First().TableName;
-            var targetPropsTableName = Target.TableMappings.First().TableName;
+            var sourcePropsTable = Source.TableMappings.First().EntitySet;
+            var targetPropsTable = Target.TableMappings.First().EntitySet;
 
-            BinaryExpr condition = null;
+            var sourceTableDbExpr = DbExpressionBuilder.Bind(DbExpressionBuilder.Scan(sourcePropsTable));
+            var targetTableDbExpr = DbExpressionBuilder.Bind(DbExpressionBuilder.Scan(targetPropsTable));
+
+            DbExpression condition = null;
             for (int i = 0; i < SourceColumns.Count(); i++)
             {
-                var sourceProp = SourceColumns.ElementAt(i);
-                var targetProp = TargetColumns.ElementAt(i);
+                var expr = DbExpressionBuilder.Equal(
+                    DbExpressionBuilder.Property(sourceTableDbExpr.Variable, SourceColumns.ElementAt(i)),
+                    DbExpressionBuilder.Property(targetTableDbExpr.Variable, TargetColumns.ElementAt(i))
+                );
 
-                BinaryExpr expr = new EqualExpr(
-                    new ColumnExpr(new Column(sourcePropsTableName, sourceProp)),
-                    new ColumnExpr(new Column(targetPropsTableName, targetProp)));
-
-                condition = condition == null ? expr : new AndExpr(condition, expr);
+                condition = condition == null ? (DbExpression)expr : DbExpressionBuilder.And(condition, expr);
             }
 
-            return new InnerJoin(new Table(sourcePropsTableName), new Table(targetPropsTableName), condition);
+            return DbExpressionBuilder.InnerJoin(sourceTableDbExpr, targetTableDbExpr, condition);
         }
 
         public virtual AssociationMapping Reverse()

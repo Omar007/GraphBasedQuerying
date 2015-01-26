@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.Entity;
 using System.Data.Entity.Core.Objects;
@@ -22,58 +23,46 @@ namespace EntityGraph4EF6
             //Also, if we don't do this, DbContext is way slower then ObjectContext.
             var oldDetectValue = context.Configuration.AutoDetectChangesEnabled;
             context.Configuration.AutoDetectChangesEnabled = false;
-
-            using (var reader = ExecuteQuery(context, queryPlan.CommandText))
-            {
-                foreach (var rootTypeMapping in queryPlan.TypeMappings)
-                {
-                    while (reader.Read())
-                    {
-                        var typeId = reader[TypeMapping.TypeColumn];
-                        if (typeId == DBNull.Value)
-                        {
-                            return;
-                        }
-
-                        var typeMapping = rootTypeMapping.GetFor((string)typeId);
-                        var dbSet = context.Set(typeMapping.Type);
-                        var entity = FillProperties(typeMapping, reader, dbSet.Create(typeMapping.Type));
-
-                        try
-                        {
-                            dbSet.Attach(entity);
-                        }
-                        catch (Exception e)
-                        {
-                            Debug.WriteLine(e);
-                        }
-                    }
-                    reader.NextResult();
-                }
-            }
-
+            ExecuteQueries(context, queryPlan.CommandTypes);
             context.Configuration.AutoDetectChangesEnabled = oldDetectValue;
             context.ChangeTracker.DetectChanges();
         }
 
-        private static DbDataReader ExecuteQuery(DbContext context, string query)
+        private static void ExecuteQueries(DbContext context, IDictionary<DbCommand, TypeMapping> commands)
         {
-            var dbCommand = context.Database.Connection.CreateCommand();
-            dbCommand.CommandText = query;
+            foreach (var command in commands)
+            {
+                using (var reader = command.Key.ExecuteReader())
+                {
+                    ProcessQueryResults(context, reader, command.Value);
+                }
+            }
+        }
 
-            Debug.WriteLine(dbCommand.CommandText);
+        private static void ProcessQueryResults(DbContext context, DbDataReader reader, TypeMapping rootTypeMapping)
+        {
+            while (reader.Read())
+            {
+                var typeId = reader[TypeMapping.TypeColumn];
+                if (typeId == DBNull.Value)
+                {
+                    return;
+                }
 
-            //TODO: Create bindings in Expression2Sql instead of assigning values?
-            //foreach (var binding in queryPlan.Bindings)
-            //{
-            //    var param = dbCommand.CreateParameter();
-            //    param.ParameterName = binding.Parameter.ToString();
-            //    param.Value = binding.Value.ToString();
-            //    dbCommand.Parameters.Add(param);
-            //}
+                var typeMapping = rootTypeMapping.GetFor((string)typeId);
+                var dbSet = context.Set(typeMapping.Type);
+                var entity = FillProperties(typeMapping, reader, dbSet.Create(typeMapping.Type));
 
-            dbCommand.Connection.Open();
-            return dbCommand.ExecuteReader();
+                try
+                {
+                    dbSet.Attach(entity);
+                }
+                catch (Exception e)
+                {
+                    Debug.WriteLine(e);
+                }
+            }
+            Debug.Assert(!reader.NextResult());
         }
 
         private static object FillProperties(TypeMapping typeMapping, DbDataReader reader, object entity)
