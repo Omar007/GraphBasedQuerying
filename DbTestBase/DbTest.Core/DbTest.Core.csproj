@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A380E1A9-B165-4C91-A998-B3E1B4CEC92D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DbTest.Core</RootNamespace>
+    <AssemblyName>DbTest.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Core\DbGenerator.cs" />
+    <Compile Include="Core\DbTester.cs" />
+    <Compile Include="Core\ProgramRunner.cs" />
+    <Compile Include="Core\ProgramSettings.cs" />
+    <Compile Include="Core\Settings.cs" />
+    <Compile Include="Core\TestSettings.cs" />
+    <Compile Include="Helpers\IDatabaseConnection.cs" />
+    <Compile Include="Helpers\IGenerator.cs" />
+    <Compile Include="Helpers\Population.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\IEFConcretesTest.cs" />
+    <Compile Include="Tests\IEFTest.cs" />
+    <Compile Include="Tests\IGBQTest.cs" />
+    <Compile Include="Tests\PopulationTest.cs" />
+    <Compile Include="Writers\DurationsWriter.cs" />
+    <Compile Include="Writers\IWriter.cs" />
+    <Compile Include="Writers\TestSummaryWriter.cs" />
+    <None Include="Writers\XmlWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SqlScripts\northwind.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PerformanceFramework">
+      <HintPath>..\..\PerformanceFramework\PerformanceFramework\bin\Release\PerformanceFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,2953 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="InheritanceDepth6Assoc2Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="InheritanceDepth6Assoc2ModelStoreContainer">
+    <EntitySet Name="E00Set" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="OSet" EntityType="InheritanceDepth6Assoc2Model.Store.OSet" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="A00Set" EntityType="InheritanceDepth6Assoc2Model.Store.A00Set" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="B00Set" EntityType="InheritanceDepth6Assoc2Model.Store.B00Set" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="C00Set" EntityType="InheritanceDepth6Assoc2Model.Store.C00Set" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="A00Set_A10" EntityType="InheritanceDepth6Assoc2Model.Store.A00Set_A10" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="A00Set_A11" EntityType="InheritanceDepth6Assoc2Model.Store.A00Set_A11" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E10" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E10" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E11" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E11" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E20" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E20" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E21" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E21" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E22" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E22" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E23" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E23" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E30" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E30" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E31" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E31" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E32" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E32" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E33" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E33" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E34" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E34" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E35" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E35" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E36" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E36" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E37" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E37" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E40" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E40" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E41" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E41" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E42" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E42" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E43" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E43" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E44" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E44" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E45" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E45" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E46" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E46" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E47" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E47" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E48" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E48" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E49" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E49" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E410" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E410" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E411" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E411" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E412" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E412" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E413" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E413" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E414" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E414" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E415" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E415" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E50" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E50" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E51" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E51" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E52" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E52" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E53" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E53" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E54" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E54" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E55" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E55" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E56" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E56" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E57" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E57" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E58" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E58" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E59" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E59" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E510" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E510" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E511" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E511" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E512" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E512" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E513" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E513" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E514" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E514" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E515" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E515" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E516" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E516" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E517" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E517" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E518" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E518" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E519" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E519" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E520" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E520" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E521" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E521" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E522" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E522" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E523" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E523" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E524" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E524" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E525" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E525" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E526" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E526" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E527" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E527" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E528" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E528" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E529" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E529" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E530" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E530" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E531" EntityType="InheritanceDepth6Assoc2Model.Store.E00Set_E531" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="A00Set_A12" EntityType="InheritanceDepth6Assoc2Model.Store.A00Set_A12" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <AssociationSet Name="OE00" Association="InheritanceDepth6Assoc2Model.Store.OE00">
+      <End Role="O" EntitySet="OSet" />
+      <End Role="E00" EntitySet="E00Set" />
+    </AssociationSet>
+    <AssociationSet Name="E00A00" Association="InheritanceDepth6Assoc2Model.Store.E00A00">
+      <End Role="E00" EntitySet="E00Set" />
+      <End Role="A00" EntitySet="A00Set" />
+    </AssociationSet>
+    <AssociationSet Name="A10B00" Association="InheritanceDepth6Assoc2Model.Store.A10B00">
+      <End Role="A10" EntitySet="A00Set_A10" />
+      <End Role="B00" EntitySet="B00Set" />
+    </AssociationSet>
+    <AssociationSet Name="A11C00" Association="InheritanceDepth6Assoc2Model.Store.A11C00">
+      <End Role="A11" EntitySet="A00Set_A11" />
+      <End Role="C00" EntitySet="C00Set" />
+    </AssociationSet>
+    <AssociationSet Name="FK_A10_inherits_A00" Association="InheritanceDepth6Assoc2Model.Store.FK_A10_inherits_A00">
+      <End Role="A00" EntitySet="A00Set" />
+      <End Role="A10" EntitySet="A00Set_A10" />
+    </AssociationSet>
+    <AssociationSet Name="FK_A11_inherits_A00" Association="InheritanceDepth6Assoc2Model.Store.FK_A11_inherits_A00">
+      <End Role="A00" EntitySet="A00Set" />
+      <End Role="A11" EntitySet="A00Set_A11" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E10_inherits_E00" Association="InheritanceDepth6Assoc2Model.Store.FK_E10_inherits_E00">
+      <End Role="E00" EntitySet="E00Set" />
+      <End Role="E10" EntitySet="E00Set_E10" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E11_inherits_E00" Association="InheritanceDepth6Assoc2Model.Store.FK_E11_inherits_E00">
+      <End Role="E00" EntitySet="E00Set" />
+      <End Role="E11" EntitySet="E00Set_E11" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E20_inherits_E10" Association="InheritanceDepth6Assoc2Model.Store.FK_E20_inherits_E10">
+      <End Role="E10" EntitySet="E00Set_E10" />
+      <End Role="E20" EntitySet="E00Set_E20" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E21_inherits_E10" Association="InheritanceDepth6Assoc2Model.Store.FK_E21_inherits_E10">
+      <End Role="E10" EntitySet="E00Set_E10" />
+      <End Role="E21" EntitySet="E00Set_E21" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E22_inherits_E11" Association="InheritanceDepth6Assoc2Model.Store.FK_E22_inherits_E11">
+      <End Role="E11" EntitySet="E00Set_E11" />
+      <End Role="E22" EntitySet="E00Set_E22" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E23_inherits_E11" Association="InheritanceDepth6Assoc2Model.Store.FK_E23_inherits_E11">
+      <End Role="E11" EntitySet="E00Set_E11" />
+      <End Role="E23" EntitySet="E00Set_E23" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E30_inherits_E20" Association="InheritanceDepth6Assoc2Model.Store.FK_E30_inherits_E20">
+      <End Role="E20" EntitySet="E00Set_E20" />
+      <End Role="E30" EntitySet="E00Set_E30" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E31_inherits_E20" Association="InheritanceDepth6Assoc2Model.Store.FK_E31_inherits_E20">
+      <End Role="E20" EntitySet="E00Set_E20" />
+      <End Role="E31" EntitySet="E00Set_E31" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E32_inherits_E21" Association="InheritanceDepth6Assoc2Model.Store.FK_E32_inherits_E21">
+      <End Role="E21" EntitySet="E00Set_E21" />
+      <End Role="E32" EntitySet="E00Set_E32" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E33_inherits_E21" Association="InheritanceDepth6Assoc2Model.Store.FK_E33_inherits_E21">
+      <End Role="E21" EntitySet="E00Set_E21" />
+      <End Role="E33" EntitySet="E00Set_E33" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E34_inherits_E22" Association="InheritanceDepth6Assoc2Model.Store.FK_E34_inherits_E22">
+      <End Role="E22" EntitySet="E00Set_E22" />
+      <End Role="E34" EntitySet="E00Set_E34" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E35_inherits_E22" Association="InheritanceDepth6Assoc2Model.Store.FK_E35_inherits_E22">
+      <End Role="E22" EntitySet="E00Set_E22" />
+      <End Role="E35" EntitySet="E00Set_E35" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E36_inherits_E23" Association="InheritanceDepth6Assoc2Model.Store.FK_E36_inherits_E23">
+      <End Role="E23" EntitySet="E00Set_E23" />
+      <End Role="E36" EntitySet="E00Set_E36" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E37_inherits_E23" Association="InheritanceDepth6Assoc2Model.Store.FK_E37_inherits_E23">
+      <End Role="E23" EntitySet="E00Set_E23" />
+      <End Role="E37" EntitySet="E00Set_E37" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E40_inherits_E30" Association="InheritanceDepth6Assoc2Model.Store.FK_E40_inherits_E30">
+      <End Role="E30" EntitySet="E00Set_E30" />
+      <End Role="E40" EntitySet="E00Set_E40" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E41_inherits_E30" Association="InheritanceDepth6Assoc2Model.Store.FK_E41_inherits_E30">
+      <End Role="E30" EntitySet="E00Set_E30" />
+      <End Role="E41" EntitySet="E00Set_E41" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E42_inherits_E31" Association="InheritanceDepth6Assoc2Model.Store.FK_E42_inherits_E31">
+      <End Role="E31" EntitySet="E00Set_E31" />
+      <End Role="E42" EntitySet="E00Set_E42" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E43_inherits_E31" Association="InheritanceDepth6Assoc2Model.Store.FK_E43_inherits_E31">
+      <End Role="E31" EntitySet="E00Set_E31" />
+      <End Role="E43" EntitySet="E00Set_E43" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E44_inherits_E32" Association="InheritanceDepth6Assoc2Model.Store.FK_E44_inherits_E32">
+      <End Role="E32" EntitySet="E00Set_E32" />
+      <End Role="E44" EntitySet="E00Set_E44" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E45_inherits_E32" Association="InheritanceDepth6Assoc2Model.Store.FK_E45_inherits_E32">
+      <End Role="E32" EntitySet="E00Set_E32" />
+      <End Role="E45" EntitySet="E00Set_E45" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E46_inherits_E33" Association="InheritanceDepth6Assoc2Model.Store.FK_E46_inherits_E33">
+      <End Role="E33" EntitySet="E00Set_E33" />
+      <End Role="E46" EntitySet="E00Set_E46" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E47_inherits_E33" Association="InheritanceDepth6Assoc2Model.Store.FK_E47_inherits_E33">
+      <End Role="E33" EntitySet="E00Set_E33" />
+      <End Role="E47" EntitySet="E00Set_E47" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E48_inherits_E34" Association="InheritanceDepth6Assoc2Model.Store.FK_E48_inherits_E34">
+      <End Role="E34" EntitySet="E00Set_E34" />
+      <End Role="E48" EntitySet="E00Set_E48" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E49_inherits_E34" Association="InheritanceDepth6Assoc2Model.Store.FK_E49_inherits_E34">
+      <End Role="E34" EntitySet="E00Set_E34" />
+      <End Role="E49" EntitySet="E00Set_E49" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E410_inherits_E35" Association="InheritanceDepth6Assoc2Model.Store.FK_E410_inherits_E35">
+      <End Role="E35" EntitySet="E00Set_E35" />
+      <End Role="E410" EntitySet="E00Set_E410" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E411_inherits_E35" Association="InheritanceDepth6Assoc2Model.Store.FK_E411_inherits_E35">
+      <End Role="E35" EntitySet="E00Set_E35" />
+      <End Role="E411" EntitySet="E00Set_E411" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E412_inherits_E36" Association="InheritanceDepth6Assoc2Model.Store.FK_E412_inherits_E36">
+      <End Role="E36" EntitySet="E00Set_E36" />
+      <End Role="E412" EntitySet="E00Set_E412" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E413_inherits_E36" Association="InheritanceDepth6Assoc2Model.Store.FK_E413_inherits_E36">
+      <End Role="E36" EntitySet="E00Set_E36" />
+      <End Role="E413" EntitySet="E00Set_E413" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E414_inherits_E37" Association="InheritanceDepth6Assoc2Model.Store.FK_E414_inherits_E37">
+      <End Role="E37" EntitySet="E00Set_E37" />
+      <End Role="E414" EntitySet="E00Set_E414" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E415_inherits_E37" Association="InheritanceDepth6Assoc2Model.Store.FK_E415_inherits_E37">
+      <End Role="E37" EntitySet="E00Set_E37" />
+      <End Role="E415" EntitySet="E00Set_E415" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E50_inherits_E40" Association="InheritanceDepth6Assoc2Model.Store.FK_E50_inherits_E40">
+      <End Role="E40" EntitySet="E00Set_E40" />
+      <End Role="E50" EntitySet="E00Set_E50" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E51_inherits_E40" Association="InheritanceDepth6Assoc2Model.Store.FK_E51_inherits_E40">
+      <End Role="E40" EntitySet="E00Set_E40" />
+      <End Role="E51" EntitySet="E00Set_E51" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E52_inherits_E41" Association="InheritanceDepth6Assoc2Model.Store.FK_E52_inherits_E41">
+      <End Role="E41" EntitySet="E00Set_E41" />
+      <End Role="E52" EntitySet="E00Set_E52" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E53_inherits_E41" Association="InheritanceDepth6Assoc2Model.Store.FK_E53_inherits_E41">
+      <End Role="E41" EntitySet="E00Set_E41" />
+      <End Role="E53" EntitySet="E00Set_E53" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E54_inherits_E42" Association="InheritanceDepth6Assoc2Model.Store.FK_E54_inherits_E42">
+      <End Role="E42" EntitySet="E00Set_E42" />
+      <End Role="E54" EntitySet="E00Set_E54" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E55_inherits_E42" Association="InheritanceDepth6Assoc2Model.Store.FK_E55_inherits_E42">
+      <End Role="E42" EntitySet="E00Set_E42" />
+      <End Role="E55" EntitySet="E00Set_E55" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E56_inherits_E43" Association="InheritanceDepth6Assoc2Model.Store.FK_E56_inherits_E43">
+      <End Role="E43" EntitySet="E00Set_E43" />
+      <End Role="E56" EntitySet="E00Set_E56" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E57_inherits_E43" Association="InheritanceDepth6Assoc2Model.Store.FK_E57_inherits_E43">
+      <End Role="E43" EntitySet="E00Set_E43" />
+      <End Role="E57" EntitySet="E00Set_E57" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E58_inherits_E44" Association="InheritanceDepth6Assoc2Model.Store.FK_E58_inherits_E44">
+      <End Role="E44" EntitySet="E00Set_E44" />
+      <End Role="E58" EntitySet="E00Set_E58" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E59_inherits_E44" Association="InheritanceDepth6Assoc2Model.Store.FK_E59_inherits_E44">
+      <End Role="E44" EntitySet="E00Set_E44" />
+      <End Role="E59" EntitySet="E00Set_E59" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E510_inherits_E45" Association="InheritanceDepth6Assoc2Model.Store.FK_E510_inherits_E45">
+      <End Role="E45" EntitySet="E00Set_E45" />
+      <End Role="E510" EntitySet="E00Set_E510" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E511_inherits_E45" Association="InheritanceDepth6Assoc2Model.Store.FK_E511_inherits_E45">
+      <End Role="E45" EntitySet="E00Set_E45" />
+      <End Role="E511" EntitySet="E00Set_E511" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E512_inherits_E46" Association="InheritanceDepth6Assoc2Model.Store.FK_E512_inherits_E46">
+      <End Role="E46" EntitySet="E00Set_E46" />
+      <End Role="E512" EntitySet="E00Set_E512" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E513_inherits_E46" Association="InheritanceDepth6Assoc2Model.Store.FK_E513_inherits_E46">
+      <End Role="E46" EntitySet="E00Set_E46" />
+      <End Role="E513" EntitySet="E00Set_E513" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E514_inherits_E47" Association="InheritanceDepth6Assoc2Model.Store.FK_E514_inherits_E47">
+      <End Role="E47" EntitySet="E00Set_E47" />
+      <End Role="E514" EntitySet="E00Set_E514" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E515_inherits_E47" Association="InheritanceDepth6Assoc2Model.Store.FK_E515_inherits_E47">
+      <End Role="E47" EntitySet="E00Set_E47" />
+      <End Role="E515" EntitySet="E00Set_E515" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E516_inherits_E48" Association="InheritanceDepth6Assoc2Model.Store.FK_E516_inherits_E48">
+      <End Role="E48" EntitySet="E00Set_E48" />
+      <End Role="E516" EntitySet="E00Set_E516" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E517_inherits_E48" Association="InheritanceDepth6Assoc2Model.Store.FK_E517_inherits_E48">
+      <End Role="E48" EntitySet="E00Set_E48" />
+      <End Role="E517" EntitySet="E00Set_E517" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E518_inherits_E49" Association="InheritanceDepth6Assoc2Model.Store.FK_E518_inherits_E49">
+      <End Role="E49" EntitySet="E00Set_E49" />
+      <End Role="E518" EntitySet="E00Set_E518" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E519_inherits_E49" Association="InheritanceDepth6Assoc2Model.Store.FK_E519_inherits_E49">
+      <End Role="E49" EntitySet="E00Set_E49" />
+      <End Role="E519" EntitySet="E00Set_E519" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E520_inherits_E410" Association="InheritanceDepth6Assoc2Model.Store.FK_E520_inherits_E410">
+      <End Role="E410" EntitySet="E00Set_E410" />
+      <End Role="E520" EntitySet="E00Set_E520" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E521_inherits_E410" Association="InheritanceDepth6Assoc2Model.Store.FK_E521_inherits_E410">
+      <End Role="E410" EntitySet="E00Set_E410" />
+      <End Role="E521" EntitySet="E00Set_E521" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E522_inherits_E411" Association="InheritanceDepth6Assoc2Model.Store.FK_E522_inherits_E411">
+      <End Role="E411" EntitySet="E00Set_E411" />
+      <End Role="E522" EntitySet="E00Set_E522" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E523_inherits_E411" Association="InheritanceDepth6Assoc2Model.Store.FK_E523_inherits_E411">
+      <End Role="E411" EntitySet="E00Set_E411" />
+      <End Role="E523" EntitySet="E00Set_E523" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E524_inherits_E412" Association="InheritanceDepth6Assoc2Model.Store.FK_E524_inherits_E412">
+      <End Role="E412" EntitySet="E00Set_E412" />
+      <End Role="E524" EntitySet="E00Set_E524" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E525_inherits_E412" Association="InheritanceDepth6Assoc2Model.Store.FK_E525_inherits_E412">
+      <End Role="E412" EntitySet="E00Set_E412" />
+      <End Role="E525" EntitySet="E00Set_E525" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E526_inherits_E413" Association="InheritanceDepth6Assoc2Model.Store.FK_E526_inherits_E413">
+      <End Role="E413" EntitySet="E00Set_E413" />
+      <End Role="E526" EntitySet="E00Set_E526" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E527_inherits_E413" Association="InheritanceDepth6Assoc2Model.Store.FK_E527_inherits_E413">
+      <End Role="E413" EntitySet="E00Set_E413" />
+      <End Role="E527" EntitySet="E00Set_E527" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E528_inherits_E414" Association="InheritanceDepth6Assoc2Model.Store.FK_E528_inherits_E414">
+      <End Role="E414" EntitySet="E00Set_E414" />
+      <End Role="E528" EntitySet="E00Set_E528" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E529_inherits_E414" Association="InheritanceDepth6Assoc2Model.Store.FK_E529_inherits_E414">
+      <End Role="E414" EntitySet="E00Set_E414" />
+      <End Role="E529" EntitySet="E00Set_E529" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E530_inherits_E415" Association="InheritanceDepth6Assoc2Model.Store.FK_E530_inherits_E415">
+      <End Role="E415" EntitySet="E00Set_E415" />
+      <End Role="E530" EntitySet="E00Set_E530" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E531_inherits_E415" Association="InheritanceDepth6Assoc2Model.Store.FK_E531_inherits_E415">
+      <End Role="E415" EntitySet="E00Set_E415" />
+      <End Role="E531" EntitySet="E00Set_E531" />
+    </AssociationSet>
+    <AssociationSet Name="FK_A12_inherits_A00" Association="InheritanceDepth6Assoc2Model.Store.FK_A12_inherits_A00">
+      <End Role="A00" EntitySet="A00Set" />
+      <End Role="A12" EntitySet="A00Set_A12" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="E00Set">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dE00" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="A00Set">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dA00" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="E00Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="B00Set">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dB00" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="A10Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="C00Set">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dC00" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="A11Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="A00Set_A10">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dA10" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="A00Set_A11">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dA11" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E10">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE10" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E11">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE11" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E20">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE20" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E21">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE21" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E22">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE22" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E23">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE23" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E30">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE30" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E31">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE31" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E32">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE32" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E33">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE33" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E34">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE34" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E35">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE35" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E36">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE36" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E37">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE37" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E40">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE40" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E41">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE41" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E42">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE42" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E43">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE43" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E44">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE44" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E45">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE45" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E46">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE46" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E47">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE47" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E48">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE48" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E49">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE49" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E410">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE410" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E411">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE411" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E412">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE412" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E413">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE413" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E414">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE414" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E415">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE415" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E50">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE50" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E51">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE51" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E52">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE52" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E53">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE53" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E54">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE54" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E55">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE55" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E56">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE56" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E57">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE57" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E58">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE58" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E59">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE59" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E510">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE510" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E511">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE511" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E512">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE512" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E513">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE513" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E514">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE514" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E515">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE515" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E516">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE516" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E517">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE517" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E518">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE518" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E519">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE519" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E520">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE520" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E521">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE521" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E522">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE522" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E523">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE523" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E524">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE524" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E525">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE525" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E526">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE526" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E527">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE527" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E528">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE528" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E529">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE529" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E530">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE530" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E531">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dE531" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="A00Set_A12">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="dA12" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="OE00">
+    <End Role="O" Type="InheritanceDepth6Assoc2Model.Store.OSet" Multiplicity="1" />
+    <End Role="E00" Type="InheritanceDepth6Assoc2Model.Store.E00Set" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="O">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E00">
+        <PropertyRef Name="OId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="E00A00">
+    <End Role="E00" Type="InheritanceDepth6Assoc2Model.Store.E00Set" Multiplicity="1" />
+    <End Role="A00" Type="InheritanceDepth6Assoc2Model.Store.A00Set" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="E00">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="A00">
+        <PropertyRef Name="E00Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="A10B00">
+    <End Role="A10" Type="InheritanceDepth6Assoc2Model.Store.A00Set_A10" Multiplicity="1" />
+    <End Role="B00" Type="InheritanceDepth6Assoc2Model.Store.B00Set" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="A10">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="B00">
+        <PropertyRef Name="A10Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="A11C00">
+    <End Role="A11" Type="InheritanceDepth6Assoc2Model.Store.A00Set_A11" Multiplicity="1" />
+    <End Role="C00" Type="InheritanceDepth6Assoc2Model.Store.C00Set" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="A11">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C00">
+        <PropertyRef Name="A11Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_A10_inherits_A00">
+    <End Role="A00" Type="InheritanceDepth6Assoc2Model.Store.A00Set" Multiplicity="1" />
+    <End Role="A10" Type="InheritanceDepth6Assoc2Model.Store.A00Set_A10" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="A00">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="A10">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_A11_inherits_A00">
+    <End Role="A00" Type="InheritanceDepth6Assoc2Model.Store.A00Set" Multiplicity="1" />
+    <End Role="A11" Type="InheritanceDepth6Assoc2Model.Store.A00Set_A11" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="A00">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="A11">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E10_inherits_E00">
+    <End Role="E00" Type="InheritanceDepth6Assoc2Model.Store.E00Set" Multiplicity="1" />
+    <End Role="E10" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E10" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E00">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E10">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E11_inherits_E00">
+    <End Role="E00" Type="InheritanceDepth6Assoc2Model.Store.E00Set" Multiplicity="1" />
+    <End Role="E11" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E11" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E00">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E11">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E20_inherits_E10">
+    <End Role="E10" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E10" Multiplicity="1" />
+    <End Role="E20" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E20" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E10">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E20">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E21_inherits_E10">
+    <End Role="E10" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E10" Multiplicity="1" />
+    <End Role="E21" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E21" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E10">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E21">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E22_inherits_E11">
+    <End Role="E11" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E11" Multiplicity="1" />
+    <End Role="E22" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E22" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E11">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E22">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E23_inherits_E11">
+    <End Role="E11" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E11" Multiplicity="1" />
+    <End Role="E23" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E23" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E11">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E23">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E30_inherits_E20">
+    <End Role="E20" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E20" Multiplicity="1" />
+    <End Role="E30" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E30" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E20">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E30">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E31_inherits_E20">
+    <End Role="E20" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E20" Multiplicity="1" />
+    <End Role="E31" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E31" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E20">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E31">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E32_inherits_E21">
+    <End Role="E21" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E21" Multiplicity="1" />
+    <End Role="E32" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E32" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E21">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E32">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E33_inherits_E21">
+    <End Role="E21" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E21" Multiplicity="1" />
+    <End Role="E33" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E33" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E21">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E33">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E34_inherits_E22">
+    <End Role="E22" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E22" Multiplicity="1" />
+    <End Role="E34" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E34" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E22">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E34">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E35_inherits_E22">
+    <End Role="E22" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E22" Multiplicity="1" />
+    <End Role="E35" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E35" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E22">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E35">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E36_inherits_E23">
+    <End Role="E23" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E23" Multiplicity="1" />
+    <End Role="E36" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E36" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E23">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E36">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E37_inherits_E23">
+    <End Role="E23" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E23" Multiplicity="1" />
+    <End Role="E37" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E37" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E23">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E37">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E40_inherits_E30">
+    <End Role="E30" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E30" Multiplicity="1" />
+    <End Role="E40" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E40" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E30">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E40">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E41_inherits_E30">
+    <End Role="E30" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E30" Multiplicity="1" />
+    <End Role="E41" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E41" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E30">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E41">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E42_inherits_E31">
+    <End Role="E31" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E31" Multiplicity="1" />
+    <End Role="E42" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E42" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E31">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E42">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E43_inherits_E31">
+    <End Role="E31" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E31" Multiplicity="1" />
+    <End Role="E43" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E43" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E31">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E43">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E44_inherits_E32">
+    <End Role="E32" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E32" Multiplicity="1" />
+    <End Role="E44" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E44" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E32">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E44">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E45_inherits_E32">
+    <End Role="E32" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E32" Multiplicity="1" />
+    <End Role="E45" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E45" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E32">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E45">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E46_inherits_E33">
+    <End Role="E33" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E33" Multiplicity="1" />
+    <End Role="E46" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E46" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E33">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E46">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E47_inherits_E33">
+    <End Role="E33" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E33" Multiplicity="1" />
+    <End Role="E47" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E47" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E33">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E47">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E48_inherits_E34">
+    <End Role="E34" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E34" Multiplicity="1" />
+    <End Role="E48" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E48" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E34">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E48">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E49_inherits_E34">
+    <End Role="E34" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E34" Multiplicity="1" />
+    <End Role="E49" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E49" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E34">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E49">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E410_inherits_E35">
+    <End Role="E35" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E35" Multiplicity="1" />
+    <End Role="E410" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E410" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E35">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E410">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E411_inherits_E35">
+    <End Role="E35" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E35" Multiplicity="1" />
+    <End Role="E411" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E411" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E35">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E411">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E412_inherits_E36">
+    <End Role="E36" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E36" Multiplicity="1" />
+    <End Role="E412" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E412" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E36">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E412">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E413_inherits_E36">
+    <End Role="E36" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E36" Multiplicity="1" />
+    <End Role="E413" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E413" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E36">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E413">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E414_inherits_E37">
+    <End Role="E37" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E37" Multiplicity="1" />
+    <End Role="E414" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E414" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E37">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E414">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E415_inherits_E37">
+    <End Role="E37" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E37" Multiplicity="1" />
+    <End Role="E415" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E415" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E37">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E415">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E50_inherits_E40">
+    <End Role="E40" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E40" Multiplicity="1" />
+    <End Role="E50" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E50" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E40">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E50">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E51_inherits_E40">
+    <End Role="E40" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E40" Multiplicity="1" />
+    <End Role="E51" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E51" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E40">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E51">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E52_inherits_E41">
+    <End Role="E41" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E41" Multiplicity="1" />
+    <End Role="E52" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E52" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E41">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E52">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E53_inherits_E41">
+    <End Role="E41" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E41" Multiplicity="1" />
+    <End Role="E53" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E53" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E41">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E53">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E54_inherits_E42">
+    <End Role="E42" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E42" Multiplicity="1" />
+    <End Role="E54" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E54" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E42">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E54">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E55_inherits_E42">
+    <End Role="E42" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E42" Multiplicity="1" />
+    <End Role="E55" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E55" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E42">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E55">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E56_inherits_E43">
+    <End Role="E43" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E43" Multiplicity="1" />
+    <End Role="E56" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E56" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E43">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E56">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E57_inherits_E43">
+    <End Role="E43" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E43" Multiplicity="1" />
+    <End Role="E57" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E57" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E43">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E57">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E58_inherits_E44">
+    <End Role="E44" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E44" Multiplicity="1" />
+    <End Role="E58" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E58" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E44">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E58">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E59_inherits_E44">
+    <End Role="E44" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E44" Multiplicity="1" />
+    <End Role="E59" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E59" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E44">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E59">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E510_inherits_E45">
+    <End Role="E45" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E45" Multiplicity="1" />
+    <End Role="E510" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E510" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E45">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E510">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E511_inherits_E45">
+    <End Role="E45" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E45" Multiplicity="1" />
+    <End Role="E511" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E511" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E45">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E511">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E512_inherits_E46">
+    <End Role="E46" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E46" Multiplicity="1" />
+    <End Role="E512" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E512" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E46">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E512">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E513_inherits_E46">
+    <End Role="E46" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E46" Multiplicity="1" />
+    <End Role="E513" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E513" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E46">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E513">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E514_inherits_E47">
+    <End Role="E47" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E47" Multiplicity="1" />
+    <End Role="E514" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E514" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E47">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E514">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E515_inherits_E47">
+    <End Role="E47" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E47" Multiplicity="1" />
+    <End Role="E515" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E515" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E47">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E515">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E516_inherits_E48">
+    <End Role="E48" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E48" Multiplicity="1" />
+    <End Role="E516" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E516" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E48">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E516">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E517_inherits_E48">
+    <End Role="E48" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E48" Multiplicity="1" />
+    <End Role="E517" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E517" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E48">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E517">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E518_inherits_E49">
+    <End Role="E49" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E49" Multiplicity="1" />
+    <End Role="E518" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E518" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E49">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E518">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E519_inherits_E49">
+    <End Role="E49" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E49" Multiplicity="1" />
+    <End Role="E519" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E519" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E49">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E519">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E520_inherits_E410">
+    <End Role="E410" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E410" Multiplicity="1" />
+    <End Role="E520" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E520" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E410">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E520">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E521_inherits_E410">
+    <End Role="E410" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E410" Multiplicity="1" />
+    <End Role="E521" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E521" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E410">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E521">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E522_inherits_E411">
+    <End Role="E411" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E411" Multiplicity="1" />
+    <End Role="E522" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E522" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E411">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E522">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E523_inherits_E411">
+    <End Role="E411" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E411" Multiplicity="1" />
+    <End Role="E523" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E523" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E411">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E523">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E524_inherits_E412">
+    <End Role="E412" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E412" Multiplicity="1" />
+    <End Role="E524" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E524" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E412">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E524">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E525_inherits_E412">
+    <End Role="E412" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E412" Multiplicity="1" />
+    <End Role="E525" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E525" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E412">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E525">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E526_inherits_E413">
+    <End Role="E413" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E413" Multiplicity="1" />
+    <End Role="E526" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E526" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E413">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E526">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E527_inherits_E413">
+    <End Role="E413" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E413" Multiplicity="1" />
+    <End Role="E527" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E527" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E413">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E527">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E528_inherits_E414">
+    <End Role="E414" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E414" Multiplicity="1" />
+    <End Role="E528" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E528" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E414">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E528">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E529_inherits_E414">
+    <End Role="E414" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E414" Multiplicity="1" />
+    <End Role="E529" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E529" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E414">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E529">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E530_inherits_E415">
+    <End Role="E415" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E415" Multiplicity="1" />
+    <End Role="E530" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E530" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E415">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E530">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E531_inherits_E415">
+    <End Role="E415" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E415" Multiplicity="1" />
+    <End Role="E531" Type="InheritanceDepth6Assoc2Model.Store.E00Set_E531" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E415">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E531">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_A12_inherits_A00">
+    <End Role="A00" Type="InheritanceDepth6Assoc2Model.Store.A00Set" Multiplicity="1" />
+    <End Role="A12" Type="InheritanceDepth6Assoc2Model.Store.A00Set_A12" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="A00">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="A12">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="InheritanceDepth6Assoc2Model" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="InheritanceDepth6Assoc2ModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="E00Set" EntityType="InheritanceDepth6Assoc2Model.E00" />
+          <EntitySet Name="OSet" EntityType="InheritanceDepth6Assoc2Model.O" />
+          <AssociationSet Name="OE00" Association="InheritanceDepth6Assoc2Model.OE00">
+            <End Role="O" EntitySet="OSet" />
+            <End Role="E00" EntitySet="E00Set" />
+          </AssociationSet>
+          <EntitySet Name="A00Set" EntityType="InheritanceDepth6Assoc2Model.A00" />
+          <EntitySet Name="B00Set" EntityType="InheritanceDepth6Assoc2Model.B00" />
+          <AssociationSet Name="E00A00" Association="InheritanceDepth6Assoc2Model.E00A00">
+            <End Role="E00" EntitySet="E00Set" />
+            <End Role="A00" EntitySet="A00Set" />
+          </AssociationSet>
+          <EntitySet Name="C00Set" EntityType="InheritanceDepth6Assoc2Model.C00" />
+          <AssociationSet Name="A10B00" Association="InheritanceDepth6Assoc2Model.A10B00">
+            <End Role="A10" EntitySet="A00Set" />
+            <End Role="B00" EntitySet="B00Set" />
+          </AssociationSet>
+          <AssociationSet Name="A11C00" Association="InheritanceDepth6Assoc2Model.A11C00">
+            <End Role="A11" EntitySet="A00Set" />
+            <End Role="C00" EntitySet="C00Set" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="E00" Abstract="true">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="dE00" Nullable="true" />
+          <NavigationProperty Name="O" Relationship="InheritanceDepth6Assoc2Model.OE00" FromRole="E00" ToRole="O" />
+          <Property Type="Int32" Name="OId" Nullable="false" />
+          <NavigationProperty Name="A00Set" Relationship="InheritanceDepth6Assoc2Model.E00A00" FromRole="E00" ToRole="A00" />
+        </EntityType>
+        <EntityType Name="E10" BaseType="InheritanceDepth6Assoc2Model.E00" Abstract="true">
+          <Property Type="String" Name="dE10" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E11" BaseType="InheritanceDepth6Assoc2Model.E00" Abstract="true">
+          <Property Type="String" Name="dE11" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E20" BaseType="InheritanceDepth6Assoc2Model.E10" Abstract="true">
+          <Property Type="String" Name="dE20" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E21" BaseType="InheritanceDepth6Assoc2Model.E10" Abstract="true">
+          <Property Type="String" Name="dE21" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E22" BaseType="InheritanceDepth6Assoc2Model.E11" Abstract="true">
+          <Property Type="String" Name="dE22" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E23" BaseType="InheritanceDepth6Assoc2Model.E11" Abstract="true">
+          <Property Type="String" Name="dE23" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E30" BaseType="InheritanceDepth6Assoc2Model.E20" Abstract="true">
+          <Property Type="String" Name="dE30" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E31" BaseType="InheritanceDepth6Assoc2Model.E20" Abstract="true">
+          <Property Type="String" Name="dE31" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E32" BaseType="InheritanceDepth6Assoc2Model.E21" Abstract="true">
+          <Property Type="String" Name="dE32" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E33" BaseType="InheritanceDepth6Assoc2Model.E21" Abstract="true">
+          <Property Type="String" Name="dE33" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E34" BaseType="InheritanceDepth6Assoc2Model.E22" Abstract="true">
+          <Property Type="String" Name="dE34" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E35" BaseType="InheritanceDepth6Assoc2Model.E22" Abstract="true">
+          <Property Type="String" Name="dE35" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E36" BaseType="InheritanceDepth6Assoc2Model.E23" Abstract="true">
+          <Property Type="String" Name="dE36" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E37" BaseType="InheritanceDepth6Assoc2Model.E23" Abstract="true">
+          <Property Type="String" Name="dE37" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E40" BaseType="InheritanceDepth6Assoc2Model.E30" Abstract="true">
+          <Property Type="String" Name="dE40" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E41" BaseType="InheritanceDepth6Assoc2Model.E30" Abstract="true">
+          <Property Type="String" Name="dE41" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E42" BaseType="InheritanceDepth6Assoc2Model.E31" Abstract="true">
+          <Property Type="String" Name="dE42" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E43" BaseType="InheritanceDepth6Assoc2Model.E31" Abstract="true">
+          <Property Type="String" Name="dE43" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E44" BaseType="InheritanceDepth6Assoc2Model.E32" Abstract="true">
+          <Property Type="String" Name="dE44" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E45" BaseType="InheritanceDepth6Assoc2Model.E32" Abstract="true">
+          <Property Type="String" Name="dE45" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E46" BaseType="InheritanceDepth6Assoc2Model.E33" Abstract="true">
+          <Property Type="String" Name="dE46" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E47" BaseType="InheritanceDepth6Assoc2Model.E33" Abstract="true">
+          <Property Type="String" Name="dE47" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E48" BaseType="InheritanceDepth6Assoc2Model.E34" Abstract="true">
+          <Property Type="String" Name="dE48" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E49" BaseType="InheritanceDepth6Assoc2Model.E34" Abstract="true">
+          <Property Type="String" Name="dE49" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E410" BaseType="InheritanceDepth6Assoc2Model.E35" Abstract="true">
+          <Property Type="String" Name="dE410" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E411" BaseType="InheritanceDepth6Assoc2Model.E35" Abstract="true">
+          <Property Type="String" Name="dE411" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E412" BaseType="InheritanceDepth6Assoc2Model.E36" Abstract="true">
+          <Property Type="String" Name="dE412" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E413" BaseType="InheritanceDepth6Assoc2Model.E36" Abstract="true">
+          <Property Type="String" Name="dE413" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E414" BaseType="InheritanceDepth6Assoc2Model.E37" Abstract="true">
+          <Property Type="String" Name="dE414" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E415" BaseType="InheritanceDepth6Assoc2Model.E37" Abstract="true">
+          <Property Type="String" Name="dE415" Nullable="true" />
+        </EntityType>
+
+
+        <EntityType Name="E50" BaseType="InheritanceDepth6Assoc2Model.E40">
+          <Property Type="String" Name="dE50" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E51" BaseType="InheritanceDepth6Assoc2Model.E40">
+          <Property Type="String" Name="dE51" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E52" BaseType="InheritanceDepth6Assoc2Model.E41">
+          <Property Type="String" Name="dE52" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E53" BaseType="InheritanceDepth6Assoc2Model.E41">
+          <Property Type="String" Name="dE53" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E54" BaseType="InheritanceDepth6Assoc2Model.E42">
+          <Property Type="String" Name="dE54" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E55" BaseType="InheritanceDepth6Assoc2Model.E42">
+          <Property Type="String" Name="dE55" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E56" BaseType="InheritanceDepth6Assoc2Model.E43">
+          <Property Type="String" Name="dE56" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E57" BaseType="InheritanceDepth6Assoc2Model.E43">
+          <Property Type="String" Name="dE57" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E58" BaseType="InheritanceDepth6Assoc2Model.E44">
+          <Property Type="String" Name="dE58" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E59" BaseType="InheritanceDepth6Assoc2Model.E44">
+          <Property Type="String" Name="dE59" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E510" BaseType="InheritanceDepth6Assoc2Model.E45">
+          <Property Type="String" Name="dE510" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E511" BaseType="InheritanceDepth6Assoc2Model.E45">
+          <Property Type="String" Name="dE511" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E512" BaseType="InheritanceDepth6Assoc2Model.E46">
+          <Property Type="String" Name="dE512" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E513" BaseType="InheritanceDepth6Assoc2Model.E46">
+          <Property Type="String" Name="dE513" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E514" BaseType="InheritanceDepth6Assoc2Model.E47">
+          <Property Type="String" Name="dE514" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E515" BaseType="InheritanceDepth6Assoc2Model.E47">
+          <Property Type="String" Name="dE515" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E516" BaseType="InheritanceDepth6Assoc2Model.E48">
+          <Property Type="String" Name="dE516" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E517" BaseType="InheritanceDepth6Assoc2Model.E48">
+          <Property Type="String" Name="dE517" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E518" BaseType="InheritanceDepth6Assoc2Model.E49">
+          <Property Type="String" Name="dE518" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E519" BaseType="InheritanceDepth6Assoc2Model.E49">
+          <Property Type="String" Name="dE519" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E520" BaseType="InheritanceDepth6Assoc2Model.E410">
+          <Property Type="String" Name="dE520" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E521" BaseType="InheritanceDepth6Assoc2Model.E410">
+          <Property Type="String" Name="dE521" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E522" BaseType="InheritanceDepth6Assoc2Model.E411">
+          <Property Type="String" Name="dE522" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E523" BaseType="InheritanceDepth6Assoc2Model.E411">
+          <Property Type="String" Name="dE523" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E524" BaseType="InheritanceDepth6Assoc2Model.E412">
+          <Property Type="String" Name="dE524" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E525" BaseType="InheritanceDepth6Assoc2Model.E412">
+          <Property Type="String" Name="dE525" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E526" BaseType="InheritanceDepth6Assoc2Model.E413">
+          <Property Type="String" Name="dE526" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E527" BaseType="InheritanceDepth6Assoc2Model.E413">
+          <Property Type="String" Name="dE527" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E528" BaseType="InheritanceDepth6Assoc2Model.E414">
+          <Property Type="String" Name="dE528" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E529" BaseType="InheritanceDepth6Assoc2Model.E414">
+          <Property Type="String" Name="dE529" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E530" BaseType="InheritanceDepth6Assoc2Model.E415">
+          <Property Type="String" Name="dE530" Nullable="true" />
+        </EntityType>
+        <EntityType Name="E531" BaseType="InheritanceDepth6Assoc2Model.E415">
+          <Property Type="String" Name="dE531" Nullable="true" />
+        </EntityType>
+        <EntityType Name="O">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="E00Set" Relationship="InheritanceDepth6Assoc2Model.OE00" FromRole="O" ToRole="E00" />
+        </EntityType>
+        <Association Name="OE00">
+          <End Type="InheritanceDepth6Assoc2Model.O" Role="O" Multiplicity="1" />
+          <End Type="InheritanceDepth6Assoc2Model.E00" Role="E00" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="O">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="E00">
+              <PropertyRef Name="OId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="A00">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="dA00" />
+          <NavigationProperty Name="E00" Relationship="InheritanceDepth6Assoc2Model.E00A00" FromRole="A00" ToRole="E00" />
+          <Property Type="Int32" Name="E00Id" Nullable="false" />
+        </EntityType>
+        <EntityType Name="A10" BaseType="InheritanceDepth6Assoc2Model.A00">
+          <Property Type="String" Name="dA10" />
+          <NavigationProperty Name="B00Set" Relationship="InheritanceDepth6Assoc2Model.A10B00" FromRole="A10" ToRole="B00" />
+        </EntityType>
+        <EntityType Name="A11" BaseType="InheritanceDepth6Assoc2Model.A00">
+          <Property Type="String" Name="dA11" />
+          <NavigationProperty Name="C00Set" Relationship="InheritanceDepth6Assoc2Model.A11C00" FromRole="A11" ToRole="C00" />
+        </EntityType>
+        <EntityType Name="B00">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="dB00" />
+          <NavigationProperty Name="A10" Relationship="InheritanceDepth6Assoc2Model.A10B00" FromRole="B00" ToRole="A10" />
+          <Property Type="Int32" Name="A10Id" Nullable="false" />
+        </EntityType>
+        <Association Name="E00A00">
+          <End Type="InheritanceDepth6Assoc2Model.E00" Role="E00" Multiplicity="1" />
+          <End Type="InheritanceDepth6Assoc2Model.A00" Role="A00" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="E00">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="A00">
+              <PropertyRef Name="E00Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="A12" BaseType="InheritanceDepth6Assoc2Model.A00">
+          <Property Type="String" Name="dA12" />
+        </EntityType>
+        <EntityType Name="C00">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="dC00" Nullable="false" />
+          <NavigationProperty Name="A11" Relationship="InheritanceDepth6Assoc2Model.A11C00" FromRole="C00" ToRole="A11" />
+          <Property Type="Int32" Name="A11Id" Nullable="false" />
+        </EntityType>
+        <Association Name="A10B00">
+          <End Type="InheritanceDepth6Assoc2Model.A10" Role="A10" Multiplicity="1" />
+          <End Type="InheritanceDepth6Assoc2Model.B00" Role="B00" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="A10">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="B00">
+              <PropertyRef Name="A10Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="A11C00">
+          <End Type="InheritanceDepth6Assoc2Model.A11" Role="A11" Multiplicity="1" />
+          <End Type="InheritanceDepth6Assoc2Model.C00" Role="C00" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="A11">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="C00">
+              <PropertyRef Name="A11Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+
+
+
+
+
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InheritanceDepth6Assoc2ModelStoreContainer" CdmEntityContainer="InheritanceDepth6Assoc2ModelContainer">
+    <EntitySetMapping Name="E00Set">
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E00)">
+        <MappingFragment StoreEntitySet="E00Set">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE00" ColumnName="dE00" />
+          <ScalarProperty Name="OId" ColumnName="OId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E10)">
+        <MappingFragment StoreEntitySet="E00Set_E10">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE10" ColumnName="dE10" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E11)">
+        <MappingFragment StoreEntitySet="E00Set_E11">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE11" ColumnName="dE11" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E20)">
+        <MappingFragment StoreEntitySet="E00Set_E20">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE20" ColumnName="dE20" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E21)">
+        <MappingFragment StoreEntitySet="E00Set_E21">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE21" ColumnName="dE21" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E22)">
+        <MappingFragment StoreEntitySet="E00Set_E22">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE22" ColumnName="dE22" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E23)">
+        <MappingFragment StoreEntitySet="E00Set_E23">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE23" ColumnName="dE23" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E30)">
+        <MappingFragment StoreEntitySet="E00Set_E30">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE30" ColumnName="dE30" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E31)">
+        <MappingFragment StoreEntitySet="E00Set_E31">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE31" ColumnName="dE31" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E32)">
+        <MappingFragment StoreEntitySet="E00Set_E32">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE32" ColumnName="dE32" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E33)">
+        <MappingFragment StoreEntitySet="E00Set_E33">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE33" ColumnName="dE33" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E34)">
+        <MappingFragment StoreEntitySet="E00Set_E34">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE34" ColumnName="dE34" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E35)">
+        <MappingFragment StoreEntitySet="E00Set_E35">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE35" ColumnName="dE35" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E36)">
+        <MappingFragment StoreEntitySet="E00Set_E36">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE36" ColumnName="dE36" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E37)">
+        <MappingFragment StoreEntitySet="E00Set_E37">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE37" ColumnName="dE37" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E40)">
+        <MappingFragment StoreEntitySet="E00Set_E40">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE40" ColumnName="dE40" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E41)">
+        <MappingFragment StoreEntitySet="E00Set_E41">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE41" ColumnName="dE41" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E42)">
+        <MappingFragment StoreEntitySet="E00Set_E42">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE42" ColumnName="dE42" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E43)">
+        <MappingFragment StoreEntitySet="E00Set_E43">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE43" ColumnName="dE43" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E44)">
+        <MappingFragment StoreEntitySet="E00Set_E44">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE44" ColumnName="dE44" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E45)">
+        <MappingFragment StoreEntitySet="E00Set_E45">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE45" ColumnName="dE45" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E46)">
+        <MappingFragment StoreEntitySet="E00Set_E46">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE46" ColumnName="dE46" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E47)">
+        <MappingFragment StoreEntitySet="E00Set_E47">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE47" ColumnName="dE47" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E48)">
+        <MappingFragment StoreEntitySet="E00Set_E48">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE48" ColumnName="dE48" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E49)">
+        <MappingFragment StoreEntitySet="E00Set_E49">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE49" ColumnName="dE49" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E410)">
+        <MappingFragment StoreEntitySet="E00Set_E410">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE410" ColumnName="dE410" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E411)">
+        <MappingFragment StoreEntitySet="E00Set_E411">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE411" ColumnName="dE411" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E412)">
+        <MappingFragment StoreEntitySet="E00Set_E412">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE412" ColumnName="dE412" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E413)">
+        <MappingFragment StoreEntitySet="E00Set_E413">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE413" ColumnName="dE413" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E414)">
+        <MappingFragment StoreEntitySet="E00Set_E414">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE414" ColumnName="dE414" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E415)">
+        <MappingFragment StoreEntitySet="E00Set_E415">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE415" ColumnName="dE415" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E50)">
+        <MappingFragment StoreEntitySet="E00Set_E50">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE50" ColumnName="dE50" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E51)">
+        <MappingFragment StoreEntitySet="E00Set_E51">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE51" ColumnName="dE51" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E52)">
+        <MappingFragment StoreEntitySet="E00Set_E52">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE52" ColumnName="dE52" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E53)">
+        <MappingFragment StoreEntitySet="E00Set_E53">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE53" ColumnName="dE53" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E54)">
+        <MappingFragment StoreEntitySet="E00Set_E54">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE54" ColumnName="dE54" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E55)">
+        <MappingFragment StoreEntitySet="E00Set_E55">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE55" ColumnName="dE55" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E56)">
+        <MappingFragment StoreEntitySet="E00Set_E56">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE56" ColumnName="dE56" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E57)">
+        <MappingFragment StoreEntitySet="E00Set_E57">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE57" ColumnName="dE57" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E58)">
+        <MappingFragment StoreEntitySet="E00Set_E58">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE58" ColumnName="dE58" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E59)">
+        <MappingFragment StoreEntitySet="E00Set_E59">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE59" ColumnName="dE59" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E510)">
+        <MappingFragment StoreEntitySet="E00Set_E510">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE510" ColumnName="dE510" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E511)">
+        <MappingFragment StoreEntitySet="E00Set_E511">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE511" ColumnName="dE511" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E512)">
+        <MappingFragment StoreEntitySet="E00Set_E512">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE512" ColumnName="dE512" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E513)">
+        <MappingFragment StoreEntitySet="E00Set_E513">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE513" ColumnName="dE513" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E514)">
+        <MappingFragment StoreEntitySet="E00Set_E514">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE514" ColumnName="dE514" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E515)">
+        <MappingFragment StoreEntitySet="E00Set_E515">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE515" ColumnName="dE515" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E516)">
+        <MappingFragment StoreEntitySet="E00Set_E516">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE516" ColumnName="dE516" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E517)">
+        <MappingFragment StoreEntitySet="E00Set_E517">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE517" ColumnName="dE517" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E518)">
+        <MappingFragment StoreEntitySet="E00Set_E518">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE518" ColumnName="dE518" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E519)">
+        <MappingFragment StoreEntitySet="E00Set_E519">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE519" ColumnName="dE519" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E520)">
+        <MappingFragment StoreEntitySet="E00Set_E520">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE520" ColumnName="dE520" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E521)">
+        <MappingFragment StoreEntitySet="E00Set_E521">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE521" ColumnName="dE521" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E522)">
+        <MappingFragment StoreEntitySet="E00Set_E522">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE522" ColumnName="dE522" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E523)">
+        <MappingFragment StoreEntitySet="E00Set_E523">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE523" ColumnName="dE523" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E524)">
+        <MappingFragment StoreEntitySet="E00Set_E524">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE524" ColumnName="dE524" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E525)">
+        <MappingFragment StoreEntitySet="E00Set_E525">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE525" ColumnName="dE525" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E526)">
+        <MappingFragment StoreEntitySet="E00Set_E526">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE526" ColumnName="dE526" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E527)">
+        <MappingFragment StoreEntitySet="E00Set_E527">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE527" ColumnName="dE527" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E528)">
+        <MappingFragment StoreEntitySet="E00Set_E528">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE528" ColumnName="dE528" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E529)">
+        <MappingFragment StoreEntitySet="E00Set_E529">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE529" ColumnName="dE529" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E530)">
+        <MappingFragment StoreEntitySet="E00Set_E530">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE530" ColumnName="dE530" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.E531)">
+        <MappingFragment StoreEntitySet="E00Set_E531">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dE531" ColumnName="dE531" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSet">
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.O)">
+        <MappingFragment StoreEntitySet="OSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="A00Set">
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.A00)">
+        <MappingFragment StoreEntitySet="A00Set">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dA00" ColumnName="dA00" />
+          <ScalarProperty Name="E00Id" ColumnName="E00Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.A10)">
+        <MappingFragment StoreEntitySet="A00Set_A10">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dA10" ColumnName="dA10" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.A11)">
+        <MappingFragment StoreEntitySet="A00Set_A11">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dA11" ColumnName="dA11" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.A12)">
+        <MappingFragment StoreEntitySet="A00Set_A12">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dA12" ColumnName="dA12" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="B00Set">
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.B00)">
+        <MappingFragment StoreEntitySet="B00Set">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dB00" ColumnName="dB00" />
+          <ScalarProperty Name="A10Id" ColumnName="A10Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C00Set">
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth6Assoc2Model.C00)">
+        <MappingFragment StoreEntitySet="C00Set">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dC00" ColumnName="dC00" />
+          <ScalarProperty Name="A11Id" ColumnName="A11Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="InheritanceDepth6Model" ZoomLevel="65" xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E00" Width="1.5" PointX="54.75" PointY="13.375" Height="1.7566536458333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E10" Width="1.5" PointX="16.375" PointY="15.875" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E10" ManuallyRouted="false">
+          <ConnectorPoint PointX="55.5" PointY="15.131653645833332" />
+          <ConnectorPoint PointX="55.5" PointY="15.592306315104167" />
+          <ConnectorPoint PointX="52.583333333333336" PointY="15.592306315104167" />
+          <ConnectorPoint PointX="52.416666666666664" PointY="15.592306315104167" />
+          <ConnectorPoint PointX="37.208333333333336" PointY="15.592306315104167" />
+          <ConnectorPoint PointX="37.041666666666664" PointY="15.592306315104167" />
+          <ConnectorPoint PointX="17.125" PointY="15.592306315104167" />
+          <ConnectorPoint PointX="17.125" PointY="15.875" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E11" Width="1.5" PointX="78.375" PointY="15.875" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E11" ManuallyRouted="false">
+          <ConnectorPoint PointX="55.5" PointY="15.131653645833332" />
+          <ConnectorPoint PointX="55.5" PointY="15.5" />
+          <ConnectorPoint PointX="57.666666666666664" PointY="15.5" />
+          <ConnectorPoint PointX="57.833333333333336" PointY="15.5" />
+          <ConnectorPoint PointX="59.510414166666664" PointY="15.5" />
+          <ConnectorPoint PointX="59.677080833333335" PointY="15.5" />
+          <ConnectorPoint PointX="59.916666666666664" PointY="15.5" />
+          <ConnectorPoint PointX="60.083333333333336" PointY="15.5" />
+          <ConnectorPoint PointX="79.125" PointY="15.5" />
+          <ConnectorPoint PointX="79.125" PointY="15.875" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E20" Width="1.5" PointX="27.25" PointY="17" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E20" ManuallyRouted="false">
+          <ConnectorPoint PointX="17.125" PointY="16.275" />
+          <ConnectorPoint PointX="17.125" PointY="16.625" />
+          <ConnectorPoint PointX="28" PointY="16.625" />
+          <ConnectorPoint PointX="28" PointY="17" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E21" Width="1.5" PointX="45.25" PointY="17" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E21" ManuallyRouted="false">
+          <ConnectorPoint PointX="17.125" PointY="16.275" />
+          <ConnectorPoint PointX="17.125" PointY="16.625" />
+          <ConnectorPoint PointX="46" PointY="16.625" />
+          <ConnectorPoint PointX="46" PointY="17" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E22" Width="1.5" PointX="69.375" PointY="17" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E22" ManuallyRouted="false">
+          <ConnectorPoint PointX="79.125" PointY="16.275" />
+          <ConnectorPoint PointX="79.125" PointY="16.625" />
+          <ConnectorPoint PointX="70.125" PointY="16.625" />
+          <ConnectorPoint PointX="70.125" PointY="17" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E23" Width="1.5" PointX="87.375" PointY="17" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E23" ManuallyRouted="false">
+          <ConnectorPoint PointX="79.125" PointY="16.275" />
+          <ConnectorPoint PointX="79.125" PointY="16.625" />
+          <ConnectorPoint PointX="88.125" PointY="16.625" />
+          <ConnectorPoint PointX="88.125" PointY="17" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E30" Width="1.5" PointX="22.75" PointY="18.125" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E30" ManuallyRouted="false">
+          <ConnectorPoint PointX="28" PointY="17.4" />
+          <ConnectorPoint PointX="28" PointY="17.75" />
+          <ConnectorPoint PointX="23.5" PointY="17.75" />
+          <ConnectorPoint PointX="23.5" PointY="18.125" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E31" Width="1.5" PointX="31.75" PointY="18.125" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E31" ManuallyRouted="false">
+          <ConnectorPoint PointX="28" PointY="17.4" />
+          <ConnectorPoint PointX="28" PointY="17.75" />
+          <ConnectorPoint PointX="32.5" PointY="17.75" />
+          <ConnectorPoint PointX="32.5" PointY="18.125" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E32" Width="1.5" PointX="40.75" PointY="18.125" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E32" ManuallyRouted="false">
+          <ConnectorPoint PointX="46" PointY="17.4" />
+          <ConnectorPoint PointX="46" PointY="17.75" />
+          <ConnectorPoint PointX="41.5" PointY="17.75" />
+          <ConnectorPoint PointX="41.5" PointY="18.125" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E33" Width="1.5" PointX="49.75" PointY="18.125" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E33" ManuallyRouted="false">
+          <ConnectorPoint PointX="46" PointY="17.4" />
+          <ConnectorPoint PointX="46" PointY="17.75" />
+          <ConnectorPoint PointX="50.5" PointY="17.75" />
+          <ConnectorPoint PointX="50.5" PointY="18.125" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E34" Width="1.5" PointX="64.875" PointY="18.125" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E34" ManuallyRouted="false">
+          <ConnectorPoint PointX="70.125" PointY="17.4" />
+          <ConnectorPoint PointX="70.125" PointY="17.75" />
+          <ConnectorPoint PointX="65.625" PointY="17.75" />
+          <ConnectorPoint PointX="65.625" PointY="18.125" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E35" Width="1.5" PointX="73.875" PointY="18.125" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E35" ManuallyRouted="false">
+          <ConnectorPoint PointX="70.125" PointY="17.4" />
+          <ConnectorPoint PointX="70.125" PointY="17.75" />
+          <ConnectorPoint PointX="74.625" PointY="17.75" />
+          <ConnectorPoint PointX="74.625" PointY="18.125" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E36" Width="1.5" PointX="91.875" PointY="18.125" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E36" ManuallyRouted="false">
+          <ConnectorPoint PointX="88.125" PointY="17.4" />
+          <ConnectorPoint PointX="88.125" PointY="17.75" />
+          <ConnectorPoint PointX="92.625" PointY="17.75" />
+          <ConnectorPoint PointX="92.625" PointY="18.125" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E37" Width="1.5" PointX="82.875" PointY="18.125" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E37" ManuallyRouted="false">
+          <ConnectorPoint PointX="88.125" PointY="17.4" />
+          <ConnectorPoint PointX="88.125" PointY="17.75" />
+          <ConnectorPoint PointX="83.625" PointY="17.75" />
+          <ConnectorPoint PointX="83.625" PointY="18.125" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E40" Width="1.5" PointX="20.5" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E40" ManuallyRouted="false">
+          <ConnectorPoint PointX="23.5" PointY="18.525" />
+          <ConnectorPoint PointX="23.5" PointY="19" />
+          <ConnectorPoint PointX="21.25" PointY="19" />
+          <ConnectorPoint PointX="21.25" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E41" Width="1.5" PointX="25" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E41" ManuallyRouted="false">
+          <ConnectorPoint PointX="23.5" PointY="18.525" />
+          <ConnectorPoint PointX="23.5" PointY="19" />
+          <ConnectorPoint PointX="25.75" PointY="19" />
+          <ConnectorPoint PointX="25.75" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E42" Width="1.5" PointX="34" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E42" ManuallyRouted="false">
+          <ConnectorPoint PointX="32.5" PointY="18.525" />
+          <ConnectorPoint PointX="32.5" PointY="19" />
+          <ConnectorPoint PointX="34.75" PointY="19" />
+          <ConnectorPoint PointX="34.75" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E43" Width="1.5" PointX="29.5" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E43" ManuallyRouted="false">
+          <ConnectorPoint PointX="32.5" PointY="18.525" />
+          <ConnectorPoint PointX="32.5" PointY="19" />
+          <ConnectorPoint PointX="30.25" PointY="19" />
+          <ConnectorPoint PointX="30.25" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E44" Width="1.5" PointX="38.5" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E44" ManuallyRouted="false">
+          <ConnectorPoint PointX="41.5" PointY="18.525" />
+          <ConnectorPoint PointX="41.5" PointY="19" />
+          <ConnectorPoint PointX="39.25" PointY="19" />
+          <ConnectorPoint PointX="39.25" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E45" Width="1.5" PointX="43" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E45" ManuallyRouted="false">
+          <ConnectorPoint PointX="41.5" PointY="18.525" />
+          <ConnectorPoint PointX="41.5" PointY="19" />
+          <ConnectorPoint PointX="43.75" PointY="19" />
+          <ConnectorPoint PointX="43.75" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E46" Width="1.5" PointX="52" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E46" ManuallyRouted="false">
+          <ConnectorPoint PointX="50.5" PointY="18.525" />
+          <ConnectorPoint PointX="50.5" PointY="19" />
+          <ConnectorPoint PointX="52.75" PointY="19" />
+          <ConnectorPoint PointX="52.75" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E47" Width="1.5" PointX="47.5" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E47" ManuallyRouted="false">
+          <ConnectorPoint PointX="50.5" PointY="18.525" />
+          <ConnectorPoint PointX="50.5" PointY="19" />
+          <ConnectorPoint PointX="48.25" PointY="19" />
+          <ConnectorPoint PointX="48.25" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E48" Width="1.5" PointX="62.625" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E48" ManuallyRouted="false">
+          <ConnectorPoint PointX="65.625" PointY="18.525" />
+          <ConnectorPoint PointX="65.625" PointY="19" />
+          <ConnectorPoint PointX="63.375" PointY="19" />
+          <ConnectorPoint PointX="63.375" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E49" Width="1.5" PointX="67.125" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E49" ManuallyRouted="false">
+          <ConnectorPoint PointX="65.625" PointY="18.525" />
+          <ConnectorPoint PointX="65.625" PointY="19" />
+          <ConnectorPoint PointX="67.875" PointY="19" />
+          <ConnectorPoint PointX="67.875" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E410" Width="1.5" PointX="71.625" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E410" ManuallyRouted="false">
+          <ConnectorPoint PointX="74.625" PointY="18.525" />
+          <ConnectorPoint PointX="74.625" PointY="19" />
+          <ConnectorPoint PointX="72.375" PointY="19" />
+          <ConnectorPoint PointX="72.375" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E411" Width="1.5" PointX="76.125" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E411" ManuallyRouted="false">
+          <ConnectorPoint PointX="74.625" PointY="18.525" />
+          <ConnectorPoint PointX="74.625" PointY="19" />
+          <ConnectorPoint PointX="76.875" PointY="19" />
+          <ConnectorPoint PointX="76.875" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E412" Width="1.5" PointX="89.625" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E412" ManuallyRouted="false">
+          <ConnectorPoint PointX="92.625" PointY="18.525" />
+          <ConnectorPoint PointX="92.625" PointY="19" />
+          <ConnectorPoint PointX="90.375" PointY="19" />
+          <ConnectorPoint PointX="90.375" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E413" Width="1.5" PointX="94.125" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E413" ManuallyRouted="false">
+          <ConnectorPoint PointX="92.625" PointY="18.525" />
+          <ConnectorPoint PointX="92.625" PointY="19" />
+          <ConnectorPoint PointX="94.875" PointY="19" />
+          <ConnectorPoint PointX="94.875" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E414" Width="1.5" PointX="80.625" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E414" ManuallyRouted="false">
+          <ConnectorPoint PointX="83.625" PointY="18.525" />
+          <ConnectorPoint PointX="83.625" PointY="19" />
+          <ConnectorPoint PointX="81.375" PointY="19" />
+          <ConnectorPoint PointX="81.375" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E415" Width="1.5" PointX="85.125" PointY="19.375" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E415" ManuallyRouted="false">
+          <ConnectorPoint PointX="83.625" PointY="18.525" />
+          <ConnectorPoint PointX="83.625" PointY="19" />
+          <ConnectorPoint PointX="85.875" PointY="19" />
+          <ConnectorPoint PointX="85.875" PointY="19.375" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E520" Width="1.5" PointX="70.5" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E521" Width="1.5" PointX="72.75" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E522" Width="1.5" PointX="75" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E523" Width="1.5" PointX="77.25" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E519" Width="1.5" PointX="68.25" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E518" Width="1.5" PointX="66" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E517" Width="1.5" PointX="63.75" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E513" Width="1.5" PointX="53.125" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E514" Width="1.5" PointX="46.375" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E515" Width="1.5" PointX="48.625" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E516" Width="1.5" PointX="61.5" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E524" Width="1.5" PointX="90.75" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E525" Width="1.5" PointX="88.5" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E526" Width="1.5" PointX="93" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E531" ManuallyRouted="false">
+          <ConnectorPoint PointX="85.875" PointY="19.775" />
+          <ConnectorPoint PointX="85.875" PointY="20.125" />
+          <ConnectorPoint PointX="87" PointY="20.125" />
+          <ConnectorPoint PointX="87" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E529" ManuallyRouted="false">
+          <ConnectorPoint PointX="81.375" PointY="19.775" />
+          <ConnectorPoint PointX="81.375" PointY="20.125" />
+          <ConnectorPoint PointX="82.5" PointY="20.125" />
+          <ConnectorPoint PointX="82.5" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E513" ManuallyRouted="false">
+          <ConnectorPoint PointX="52.75" PointY="19.775" />
+          <ConnectorPoint PointX="52.75" PointY="20.125" />
+          <ConnectorPoint PointX="53.875" PointY="20.125" />
+          <ConnectorPoint PointX="53.875" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E52" ManuallyRouted="false">
+          <ConnectorPoint PointX="25.75" PointY="19.775" />
+          <ConnectorPoint PointX="25.75" PointY="20.125" />
+          <ConnectorPoint PointX="24.625" PointY="20.125" />
+          <ConnectorPoint PointX="24.625" PointY="20.5" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E531" Width="1.5" PointX="86.25" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E527" Width="1.5" PointX="95.25" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E528" Width="1.5" PointX="79.5" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E529" Width="1.5" PointX="81.75" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E530" Width="1.5" PointX="84" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E512" Width="1.5" PointX="50.875" PointY="20.5" Height="0.39999999999999147" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E511" Width="1.5" PointX="41.875" PointY="20.5" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E57" Width="1.5" PointX="30.625" PointY="20.5" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E58" Width="1.5" PointX="37.375" PointY="20.5" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E59" Width="1.5" PointX="39.625" PointY="20.5" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E510" Width="1.5" PointX="44.125" PointY="20.5" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E56" Width="1.5" PointX="28.375" PointY="20.5" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E55" Width="1.5" PointX="35.125" PointY="20.5" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E54" Width="1.5" PointX="32.875" PointY="20.5" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E50" Width="1.5" PointX="19.375" PointY="20.5" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E51" Width="1.5" PointX="21.625" PointY="20.5" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E52" Width="1.5" PointX="23.875" PointY="20.5" Height="0.39999999999999858" IsExpanded="false" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.E53" Width="1.5" PointX="26.125" PointY="20.5" Height="0.39999999999999858" IsExpanded="false" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E511" ManuallyRouted="false">
+          <ConnectorPoint PointX="43.75" PointY="19.775" />
+          <ConnectorPoint PointX="43.75" PointY="20.125" />
+          <ConnectorPoint PointX="42.625" PointY="20.125" />
+          <ConnectorPoint PointX="42.625" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E54" ManuallyRouted="false">
+          <ConnectorPoint PointX="34.75" PointY="19.775" />
+          <ConnectorPoint PointX="34.75" PointY="20.125" />
+          <ConnectorPoint PointX="33.625" PointY="20.125" />
+          <ConnectorPoint PointX="33.625" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E530" ManuallyRouted="false">
+          <ConnectorPoint PointX="85.875" PointY="19.775" />
+          <ConnectorPoint PointX="85.875" PointY="20.125" />
+          <ConnectorPoint PointX="84.75" PointY="20.125" />
+          <ConnectorPoint PointX="84.75" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E528" ManuallyRouted="false">
+          <ConnectorPoint PointX="81.375" PointY="19.775" />
+          <ConnectorPoint PointX="81.375" PointY="20.125" />
+          <ConnectorPoint PointX="80.25" PointY="20.125" />
+          <ConnectorPoint PointX="80.25" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E522" ManuallyRouted="false">
+          <ConnectorPoint PointX="76.875" PointY="19.775" />
+          <ConnectorPoint PointX="76.875" PointY="20.125" />
+          <ConnectorPoint PointX="75.75" PointY="20.125" />
+          <ConnectorPoint PointX="75.75" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E521" ManuallyRouted="false">
+          <ConnectorPoint PointX="72.375" PointY="19.775" />
+          <ConnectorPoint PointX="72.375" PointY="20.125" />
+          <ConnectorPoint PointX="73.5" PointY="20.125" />
+          <ConnectorPoint PointX="73.5" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E523" ManuallyRouted="false">
+          <ConnectorPoint PointX="76.875" PointY="19.775" />
+          <ConnectorPoint PointX="76.875" PointY="20.125" />
+          <ConnectorPoint PointX="78" PointY="20.125" />
+          <ConnectorPoint PointX="78" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E53" ManuallyRouted="false">
+          <ConnectorPoint PointX="25.75" PointY="19.775" />
+          <ConnectorPoint PointX="25.75" PointY="20.125" />
+          <ConnectorPoint PointX="26.875" PointY="20.125" />
+          <ConnectorPoint PointX="26.875" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E57" ManuallyRouted="false">
+          <ConnectorPoint PointX="30.25" PointY="19.775" />
+          <ConnectorPoint PointX="30.25" PointY="20.125" />
+          <ConnectorPoint PointX="31.375" PointY="20.125" />
+          <ConnectorPoint PointX="31.375" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E515" ManuallyRouted="false">
+          <ConnectorPoint PointX="48.25" PointY="19.775" />
+          <ConnectorPoint PointX="48.25" PointY="20.125" />
+          <ConnectorPoint PointX="49.375" PointY="20.125" />
+          <ConnectorPoint PointX="49.375" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E525" ManuallyRouted="false">
+          <ConnectorPoint PointX="90.375" PointY="19.775" />
+          <ConnectorPoint PointX="90.375" PointY="20.125" />
+          <ConnectorPoint PointX="89.25" PointY="20.125" />
+          <ConnectorPoint PointX="89.25" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E518" ManuallyRouted="false">
+          <ConnectorPoint PointX="67.875" PointY="19.775" />
+          <ConnectorPoint PointX="67.875" PointY="20.125" />
+          <ConnectorPoint PointX="66.75" PointY="20.125" />
+          <ConnectorPoint PointX="66.75" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E510" ManuallyRouted="false">
+          <ConnectorPoint PointX="43.75" PointY="19.775" />
+          <ConnectorPoint PointX="43.75" PointY="20.125" />
+          <ConnectorPoint PointX="44.875" PointY="20.125" />
+          <ConnectorPoint PointX="44.875" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E520" ManuallyRouted="false">
+          <ConnectorPoint PointX="72.375" PointY="19.775" />
+          <ConnectorPoint PointX="72.375" PointY="20.125" />
+          <ConnectorPoint PointX="71.25" PointY="20.125" />
+          <ConnectorPoint PointX="71.25" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E514" ManuallyRouted="false">
+          <ConnectorPoint PointX="48.25" PointY="19.775" />
+          <ConnectorPoint PointX="48.25" PointY="20.125" />
+          <ConnectorPoint PointX="47.125" PointY="20.125" />
+          <ConnectorPoint PointX="47.125" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E55" ManuallyRouted="false">
+          <ConnectorPoint PointX="34.75" PointY="19.775" />
+          <ConnectorPoint PointX="34.75" PointY="20.125" />
+          <ConnectorPoint PointX="35.875" PointY="20.125" />
+          <ConnectorPoint PointX="35.875" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E512" ManuallyRouted="false">
+          <ConnectorPoint PointX="52.75" PointY="19.775" />
+          <ConnectorPoint PointX="52.75" PointY="20.125" />
+          <ConnectorPoint PointX="51.625" PointY="20.125" />
+          <ConnectorPoint PointX="51.625" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E527" ManuallyRouted="false">
+          <ConnectorPoint PointX="94.875" PointY="19.775" />
+          <ConnectorPoint PointX="94.875" PointY="20.125" />
+          <ConnectorPoint PointX="96" PointY="20.125" />
+          <ConnectorPoint PointX="96" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E56" ManuallyRouted="false">
+          <ConnectorPoint PointX="30.25" PointY="19.775" />
+          <ConnectorPoint PointX="30.25" PointY="20.125" />
+          <ConnectorPoint PointX="29.125" PointY="20.125" />
+          <ConnectorPoint PointX="29.125" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E516" ManuallyRouted="false">
+          <ConnectorPoint PointX="63.375" PointY="19.775" />
+          <ConnectorPoint PointX="63.375" PointY="20.125" />
+          <ConnectorPoint PointX="62.25" PointY="20.125" />
+          <ConnectorPoint PointX="62.25" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E517" ManuallyRouted="false">
+          <ConnectorPoint PointX="63.375" PointY="19.775" />
+          <ConnectorPoint PointX="63.375" PointY="20.125" />
+          <ConnectorPoint PointX="64.5" PointY="20.125" />
+          <ConnectorPoint PointX="64.5" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E524" ManuallyRouted="false">
+          <ConnectorPoint PointX="90.375" PointY="19.775" />
+          <ConnectorPoint PointX="90.375" PointY="20.125" />
+          <ConnectorPoint PointX="91.5" PointY="20.125" />
+          <ConnectorPoint PointX="91.5" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E526" ManuallyRouted="false">
+          <ConnectorPoint PointX="94.875" PointY="19.775" />
+          <ConnectorPoint PointX="94.875" PointY="20.125" />
+          <ConnectorPoint PointX="93.75" PointY="20.125" />
+          <ConnectorPoint PointX="93.75" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E59" ManuallyRouted="false">
+          <ConnectorPoint PointX="39.25" PointY="19.775" />
+          <ConnectorPoint PointX="39.25" PointY="20.125" />
+          <ConnectorPoint PointX="40.375" PointY="20.125" />
+          <ConnectorPoint PointX="40.375" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E519" ManuallyRouted="false">
+          <ConnectorPoint PointX="67.875" PointY="19.775" />
+          <ConnectorPoint PointX="67.875" PointY="20.125" />
+          <ConnectorPoint PointX="69" PointY="20.125" />
+          <ConnectorPoint PointX="69" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E51" ManuallyRouted="false">
+          <ConnectorPoint PointX="21.25" PointY="19.775" />
+          <ConnectorPoint PointX="21.25" PointY="20.125" />
+          <ConnectorPoint PointX="22.375" PointY="20.125" />
+          <ConnectorPoint PointX="22.375" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E50" ManuallyRouted="false">
+          <ConnectorPoint PointX="21.25" PointY="19.775" />
+          <ConnectorPoint PointX="21.25" PointY="20.125" />
+          <ConnectorPoint PointX="20.125" PointY="20.125" />
+          <ConnectorPoint PointX="20.125" PointY="20.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.E58" ManuallyRouted="false">
+          <ConnectorPoint PointX="39.25" PointY="19.775" />
+          <ConnectorPoint PointX="39.25" PointY="20.125" />
+          <ConnectorPoint PointX="38.125" PointY="20.125" />
+          <ConnectorPoint PointX="38.125" PointY="20.5" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.O" Width="1.5" PointX="52.5" PointY="13.625" Height="1.2636116536458388" />
+        <AssociationConnector Association="InheritanceDepth6Assoc2Model.OE00">
+          <ConnectorPoint PointX="54" PointY="14.256805826822919" />
+          <ConnectorPoint PointX="54.75" PointY="14.256805826822919" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.A00" Width="1.5" PointX="57" PointY="13.375" Height="1.5923063151041674" />
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.A10" Width="1.5" PointX="59.25" PointY="15.75" Height="1.2636116536458317" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.A10" ManuallyRouted="false">
+          <ConnectorPoint PointX="57.75" PointY="14.967306315104167" />
+          <ConnectorPoint PointX="57.75" PointY="15.375" />
+          <ConnectorPoint PointX="60" PointY="15.375" />
+          <ConnectorPoint PointX="60" PointY="15.75" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.A11" Width="1.5" PointX="51.75" PointY="15.75" Height="1.2636116536458317" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.A11" ManuallyRouted="false">
+          <ConnectorPoint PointX="57.75" PointY="14.967306315104167" />
+          <ConnectorPoint PointX="57.75" PointY="15.256653645833332" />
+          <ConnectorPoint PointX="55.583333333333336" PointY="15.256653645833332" />
+          <ConnectorPoint PointX="55.416666666666664" PointY="15.256653645833332" />
+          <ConnectorPoint PointX="52.5" PointY="15.256653645833332" />
+          <ConnectorPoint PointX="52.5" PointY="15.75" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.B00" Width="1.5" PointX="43.875" PointY="13.75" Height="1.5923063151041674" />
+        <AssociationConnector Association="InheritanceDepth6Assoc2Model.E00A00">
+          <ConnectorPoint PointX="56.25" PointY="14.171153157552084" />
+          <ConnectorPoint PointX="57" PointY="14.171153157552084" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.A12" Width="1.5" PointX="57" PointY="15.75" Height="1.0992643229166674" />
+        <InheritanceConnector EntityType="InheritanceDepth6Assoc2Model.A12" ManuallyRouted="false">
+          <ConnectorPoint PointX="57.75" PointY="14.967306315104167" />
+          <ConnectorPoint PointX="57.75" PointY="15.75" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth6Assoc2Model.C00" Width="1.5" PointX="36.375" PointY="13.75" Height="1.5923063151041674" />
+        <AssociationConnector Association="InheritanceDepth6Assoc2Model.A10B00">
+          <ConnectorPoint PointX="59.5937475" PointY="15.75" />
+          <ConnectorPoint PointX="59.5937475" PointY="15.29947998046875" />
+          <ConnectorPoint PointX="57.833333333333336" PointY="15.29947998046875" />
+          <ConnectorPoint PointX="57.666666666666664" PointY="15.29947998046875" />
+          <ConnectorPoint PointX="55.583333333333336" PointY="15.29947998046875" />
+          <ConnectorPoint PointX="55.416666666666664" PointY="15.29947998046875" />
+          <ConnectorPoint PointX="45.375" PointY="15.29947998046875" />
+        </AssociationConnector>
+        <AssociationConnector Association="InheritanceDepth6Assoc2Model.A11C00">
+          <ConnectorPoint PointX="51.75" PointY="16.1875" />
+          <ConnectorPoint PointX="37.125" PointY="16.1875" />
+          <ConnectorPoint PointX="37.125" PointY="15.342306315104167" />
+        </AssociationConnector>
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

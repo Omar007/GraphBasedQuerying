@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5939478F-FEFA-4DD7-B510-37E144AD329F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DbTest.Merijn</RootNamespace>
+    <AssemblyName>DbTest.Merijn</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <NuGetPackageImportStamp>57a2bad2</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Generators\PopulationGenerator.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Models\InheritanceDepth3Assoc1Model.Designer.cs">
+      <DependentUpon>InheritanceDepth3Assoc1Model.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\InheritanceDepth3Assoc2Model.Designer.cs">
+      <DependentUpon>InheritanceDepth3Assoc2Model.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\InheritanceDepth3Assoc3Model.Designer.cs">
+      <DependentUpon>InheritanceDepth3Assoc3Model.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\InheritanceDepth3Model.Designer.cs">
+      <DependentUpon>InheritanceDepth3Model.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\InheritanceDepth4Assoc1Model.Designer.cs">
+      <DependentUpon>InheritanceDepth4Assoc1Model.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\InheritanceDepth4Model.Designer.cs">
+      <DependentUpon>InheritanceDepth4Model.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\InheritanceDepth5Assoc1Model.Designer.cs">
+      <DependentUpon>InheritanceDepth5Assoc1Model.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\InheritanceDepth5Model.Designer.cs">
+      <DependentUpon>InheritanceDepth5Model.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\InheritanceDepth5WideAssoc1Model.Designer.cs">
+      <DependentUpon>InheritanceDepth5WideAssoc1Model.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\InheritanceDepth5WideModel.Designer.cs">
+      <DependentUpon>InheritanceDepth5WideModel.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\InheritanceDepth6Assoc1Model.Designer.cs">
+      <DependentUpon>InheritanceDepth6Assoc1Model.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\InheritanceDepth6Assoc2Model.Designer.cs">
+      <DependentUpon>InheritanceDepth6Assoc2Model.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\InheritanceDepth6Assoc3Model.Designer.cs">
+      <DependentUpon>InheritanceDepth6Assoc3Model.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\InheritanceDepth6Model.Designer.cs">
+      <DependentUpon>InheritanceDepth6Model.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Models\NorthwindModel.Designer.cs">
+      <DependentUpon>NorthwindModel.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\Base\EFMultiQuery.cs" />
+    <Compile Include="Tests\Base\EFSingleQuery.cs" />
+    <Compile Include="Tests\Base\GraphBasedQuery.cs" />
+    <Compile Include="Tests\Base\PopulationTest.cs" />
+    <Compile Include="Generators\InheritanceDepth3.cs" />
+    <Compile Include="Generators\InheritanceDepth3Assoc1.cs" />
+    <Compile Include="Generators\InheritanceDepth3Assoc2.cs" />
+    <Compile Include="Generators\InheritanceDepth3Assoc3.cs" />
+    <Compile Include="Generators\InheritanceDepth4.cs" />
+    <Compile Include="Generators\InheritanceDepth4Assoc1.cs" />
+    <Compile Include="Generators\InheritanceDepth5.cs" />
+    <Compile Include="Generators\InheritanceDepth5Assoc1.cs" />
+    <Compile Include="Generators\InheritanceDepth5Wide.cs" />
+    <Compile Include="Generators\InheritanceDepth5WideAssoc1.cs" />
+    <Compile Include="Generators\InheritanceDepth6.cs" />
+    <Compile Include="Generators\InheritanceDepth6Assoc1.cs" />
+    <Compile Include="Generators\InheritanceDepth6Assoc2.cs" />
+    <Compile Include="Generators\InheritanceDepth6Assoc3.cs" />
+    <Compile Include="Tests\InheritanceDepth3.cs" />
+    <Compile Include="Tests\InheritanceDepth3Assoc1.cs" />
+    <Compile Include="Tests\InheritanceDepth3Assoc2.cs" />
+    <Compile Include="Tests\InheritanceDepth3Assoc3.cs" />
+    <Compile Include="Tests\InheritanceDepth4.cs" />
+    <Compile Include="Tests\InheritanceDepth4Assoc1.cs" />
+    <Compile Include="Tests\InheritanceDepth5.cs" />
+    <Compile Include="Tests\InheritanceDepth5Assoc1.cs" />
+    <Compile Include="Tests\InheritanceDepth5Wide.cs" />
+    <Compile Include="Tests\InheritanceDepth5WideAssoc1.cs" />
+    <Compile Include="Tests\InheritanceDepth6.cs" />
+    <Compile Include="Tests\InheritanceDepth6Assoc1.cs" />
+    <Compile Include="Tests\InheritanceDepth6Assoc2.cs" />
+    <Compile Include="Tests\InheritanceDepth6Assoc3.cs" />
+    <Compile Include="Tests\Northwind.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\NorthwindModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NorthwindModel.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>NorthwindModel</CustomToolNamespace>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\InheritanceDepth6Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth6Model.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth6</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Models\InheritanceDepth6Assoc3Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth6Assoc3Model.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth6Assoc3</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Models\InheritanceDepth6Assoc2Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth6Assoc2Model.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth6Assoc2</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Models\InheritanceDepth6Assoc1Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth6Assoc1Model.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth6Assoc1</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Models\InheritanceDepth5WideModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth5WideModel.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth5Wide</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Models\InheritanceDepth5WideAssoc1Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth5WideAssoc1Model.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth5WideAssoc1</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Models\InheritanceDepth5Assoc1Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth5Assoc1Model.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth5Assoc1</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Models\InheritanceDepth5Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth5Model.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth5</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Models\InheritanceDepth4Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth4Model.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth4</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Models\InheritanceDepth4Assoc1Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth4Assoc1Model.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth4Assoc1</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Models\InheritanceDepth3Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth3Model.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth3</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Models\InheritanceDepth3Assoc3Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth3Assoc3Model.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth3Assoc3</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Models\InheritanceDepth3Assoc2Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth3Assoc2Model.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth3Assoc2</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Models\InheritanceDepth3Assoc1Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InheritanceDepth3Assoc1Model.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>InheritanceDepth3Assoc1</CustomToolNamespace>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="Models\NorthwindModel.edmx.diagram">
+      <DependentUpon>NorthwindModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.4.1.10715.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityGraphShape4SQL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Merijn\EntityGraphShape4SQL\bin\Release\EntityGraphShape4SQL.dll</HintPath>
+    </Reference>
+    <Reference Include="PerformanceFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PerformanceFramework\PerformanceFramework\bin\Release\PerformanceFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Tools.EntityGraph, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Merijn\EntityGraph\EntityGraph\bin\Release\System.Data.Tools.EntityGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DbTest.Core\DbTest.Core.csproj">
+      <Project>{a380e1a9-b165-4c91-a998-b3e1b4cec92d}</Project>
+      <Name>DbTest.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

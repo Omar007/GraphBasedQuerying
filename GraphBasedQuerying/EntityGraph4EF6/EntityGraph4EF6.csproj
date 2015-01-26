@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C20D579-781E-468F-BD64-05A1F3D04B89}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EntityGraph4EF6</RootNamespace>
+    <AssemblyName>EntityGraph4EF6</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Expression2SqlVisitor.cs" />
+    <Compile Include="Extensions\DbContextExtensions.cs" />
+    <Compile Include="Extensions\GraphPathExtensions.cs" />
+    <Compile Include="GraphPath.cs" />
+    <Compile Include="GraphPathCollection.cs" />
+    <Compile Include="GraphPathNode.cs" />
+    <Compile Include="Mapping\AssociationMapping.cs" />
+    <Compile Include="Mapping\AssociationMapping_M2M.cs" />
+    <Compile Include="Mapping\Mapper.cs" />
+    <Compile Include="Mapping\PropertyMapping.cs" />
+    <Compile Include="Mapping\TableMapping.cs" />
+    <Compile Include="Mapping\TypeMapping.cs" />
+    <Compile Include="SQL\Join.cs" />
+    <Compile Include="SQL\Sql.cs" />
+    <Compile Include="SQL\LessThenExpr.cs" />
+    <Compile Include="SQL\LessThenEqualExpr.cs" />
+    <Compile Include="SQL\GreaterThenEqualExpr.cs" />
+    <Compile Include="SQL\GreaterThenExpr.cs" />
+    <Compile Include="SQL\OrExpr.cs" />
+    <Compile Include="SQL\NotEqualExpr.cs" />
+    <Compile Include="LoadWhereExpr.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryPlan.cs" />
+    <Compile Include="SqlGraphShape.cs" />
+    <Compile Include="SQL\AndExpr.cs" />
+    <Compile Include="SQL\BinaryExpr.cs" />
+    <Compile Include="SQL\Case.cs" />
+    <Compile Include="SQL\Column.cs" />
+    <Compile Include="SQL\ColumnExpr.cs" />
+    <Compile Include="SQL\ColumnSelect.cs" />
+    <Compile Include="SQL\ConstantExpr.cs" />
+    <Compile Include="SQL\EqualExpr.cs" />
+    <Compile Include="SQL\Expr.cs" />
+    <Compile Include="SQL\InnerJoin.cs" />
+    <Compile Include="SQL\IsNotNull.cs" />
+    <Compile Include="SQL\LeftOuterJoin.cs" />
+    <Compile Include="SQL\SelectColumns.cs" />
+    <Compile Include="SQL\Table.cs" />
+    <Compile Include="SQL\UnaryExpr.cs" />
+    <Compile Include="SQL\When.cs" />
+    <Compile Include="SQL\WhereExpr.cs" />
+    <None Include="packages.config" />
+    <None Include="TypeTreeEdge.cs" />
+    <None Include="TypeTreeGraph.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityGraph\EntityGraph.csproj">
+      <Project>{084ff212-41f6-46e1-a31c-9f76200ea2b7}</Project>
+      <Name>EntityGraph</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

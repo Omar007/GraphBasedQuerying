@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="InheritanceDepth4Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="InheritanceDepth4ModelStoreContainer">
+    <EntitySet Name="E00Set" EntityType="InheritanceDepth4Model.Store.E00Set" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="OSet" EntityType="InheritanceDepth4Model.Store.OSet" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E10" EntityType="InheritanceDepth4Model.Store.E00Set_E10" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E11" EntityType="InheritanceDepth4Model.Store.E00Set_E11" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E20" EntityType="InheritanceDepth4Model.Store.E00Set_E20" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E21" EntityType="InheritanceDepth4Model.Store.E00Set_E21" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E22" EntityType="InheritanceDepth4Model.Store.E00Set_E22" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E23" EntityType="InheritanceDepth4Model.Store.E00Set_E23" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E30" EntityType="InheritanceDepth4Model.Store.E00Set_E30" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E31" EntityType="InheritanceDepth4Model.Store.E00Set_E31" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E32" EntityType="InheritanceDepth4Model.Store.E00Set_E32" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E33" EntityType="InheritanceDepth4Model.Store.E00Set_E33" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E34" EntityType="InheritanceDepth4Model.Store.E00Set_E34" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E35" EntityType="InheritanceDepth4Model.Store.E00Set_E35" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E36" EntityType="InheritanceDepth4Model.Store.E00Set_E36" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="E00Set_E37" EntityType="InheritanceDepth4Model.Store.E00Set_E37" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <AssociationSet Name="OE00" Association="InheritanceDepth4Model.Store.OE00">
+      <End Role="O" EntitySet="OSet" />
+      <End Role="E00" EntitySet="E00Set" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E10_inherits_E00" Association="InheritanceDepth4Model.Store.FK_E10_inherits_E00">
+      <End Role="E00" EntitySet="E00Set" />
+      <End Role="E10" EntitySet="E00Set_E10" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E11_inherits_E00" Association="InheritanceDepth4Model.Store.FK_E11_inherits_E00">
+      <End Role="E00" EntitySet="E00Set" />
+      <End Role="E11" EntitySet="E00Set_E11" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E20_inherits_E10" Association="InheritanceDepth4Model.Store.FK_E20_inherits_E10">
+      <End Role="E10" EntitySet="E00Set_E10" />
+      <End Role="E20" EntitySet="E00Set_E20" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E21_inherits_E10" Association="InheritanceDepth4Model.Store.FK_E21_inherits_E10">
+      <End Role="E10" EntitySet="E00Set_E10" />
+      <End Role="E21" EntitySet="E00Set_E21" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E22_inherits_E11" Association="InheritanceDepth4Model.Store.FK_E22_inherits_E11">
+      <End Role="E11" EntitySet="E00Set_E11" />
+      <End Role="E22" EntitySet="E00Set_E22" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E23_inherits_E11" Association="InheritanceDepth4Model.Store.FK_E23_inherits_E11">
+      <End Role="E11" EntitySet="E00Set_E11" />
+      <End Role="E23" EntitySet="E00Set_E23" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E30_inherits_E20" Association="InheritanceDepth4Model.Store.FK_E30_inherits_E20">
+      <End Role="E20" EntitySet="E00Set_E20" />
+      <End Role="E30" EntitySet="E00Set_E30" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E31_inherits_E20" Association="InheritanceDepth4Model.Store.FK_E31_inherits_E20">
+      <End Role="E20" EntitySet="E00Set_E20" />
+      <End Role="E31" EntitySet="E00Set_E31" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E32_inherits_E21" Association="InheritanceDepth4Model.Store.FK_E32_inherits_E21">
+      <End Role="E21" EntitySet="E00Set_E21" />
+      <End Role="E32" EntitySet="E00Set_E32" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E33_inherits_E21" Association="InheritanceDepth4Model.Store.FK_E33_inherits_E21">
+      <End Role="E21" EntitySet="E00Set_E21" />
+      <End Role="E33" EntitySet="E00Set_E33" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E34_inherits_E22" Association="InheritanceDepth4Model.Store.FK_E34_inherits_E22">
+      <End Role="E22" EntitySet="E00Set_E22" />
+      <End Role="E34" EntitySet="E00Set_E34" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E35_inherits_E22" Association="InheritanceDepth4Model.Store.FK_E35_inherits_E22">
+      <End Role="E22" EntitySet="E00Set_E22" />
+      <End Role="E35" EntitySet="E00Set_E35" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E36_inherits_E23" Association="InheritanceDepth4Model.Store.FK_E36_inherits_E23">
+      <End Role="E23" EntitySet="E00Set_E23" />
+      <End Role="E36" EntitySet="E00Set_E36" />
+    </AssociationSet>
+    <AssociationSet Name="FK_E37_inherits_E23" Association="InheritanceDepth4Model.Store.FK_E37_inherits_E23">
+      <End Role="E23" EntitySet="E00Set_E23" />
+      <End Role="E37" EntitySet="E00Set_E37" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="E00Set">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E10">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E11">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E20">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E21">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E22">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E23">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E30">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E31">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E32">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E33">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E34">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E35">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E36">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="E00Set_E37">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="OE00">
+    <End Role="O" Type="InheritanceDepth4Model.Store.OSet" Multiplicity="1" />
+    <End Role="E00" Type="InheritanceDepth4Model.Store.E00Set" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="O">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E00">
+        <PropertyRef Name="OId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E10_inherits_E00">
+    <End Role="E00" Type="InheritanceDepth4Model.Store.E00Set" Multiplicity="1" />
+    <End Role="E10" Type="InheritanceDepth4Model.Store.E00Set_E10" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E00">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E10">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E11_inherits_E00">
+    <End Role="E00" Type="InheritanceDepth4Model.Store.E00Set" Multiplicity="1" />
+    <End Role="E11" Type="InheritanceDepth4Model.Store.E00Set_E11" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E00">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E11">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E20_inherits_E10">
+    <End Role="E10" Type="InheritanceDepth4Model.Store.E00Set_E10" Multiplicity="1" />
+    <End Role="E20" Type="InheritanceDepth4Model.Store.E00Set_E20" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E10">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E20">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E21_inherits_E10">
+    <End Role="E10" Type="InheritanceDepth4Model.Store.E00Set_E10" Multiplicity="1" />
+    <End Role="E21" Type="InheritanceDepth4Model.Store.E00Set_E21" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E10">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E21">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E22_inherits_E11">
+    <End Role="E11" Type="InheritanceDepth4Model.Store.E00Set_E11" Multiplicity="1" />
+    <End Role="E22" Type="InheritanceDepth4Model.Store.E00Set_E22" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E11">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E22">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E23_inherits_E11">
+    <End Role="E11" Type="InheritanceDepth4Model.Store.E00Set_E11" Multiplicity="1" />
+    <End Role="E23" Type="InheritanceDepth4Model.Store.E00Set_E23" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E11">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E23">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E30_inherits_E20">
+    <End Role="E20" Type="InheritanceDepth4Model.Store.E00Set_E20" Multiplicity="1" />
+    <End Role="E30" Type="InheritanceDepth4Model.Store.E00Set_E30" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E20">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E30">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E31_inherits_E20">
+    <End Role="E20" Type="InheritanceDepth4Model.Store.E00Set_E20" Multiplicity="1" />
+    <End Role="E31" Type="InheritanceDepth4Model.Store.E00Set_E31" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E20">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E31">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E32_inherits_E21">
+    <End Role="E21" Type="InheritanceDepth4Model.Store.E00Set_E21" Multiplicity="1" />
+    <End Role="E32" Type="InheritanceDepth4Model.Store.E00Set_E32" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E21">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E32">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E33_inherits_E21">
+    <End Role="E21" Type="InheritanceDepth4Model.Store.E00Set_E21" Multiplicity="1" />
+    <End Role="E33" Type="InheritanceDepth4Model.Store.E00Set_E33" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E21">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E33">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E34_inherits_E22">
+    <End Role="E22" Type="InheritanceDepth4Model.Store.E00Set_E22" Multiplicity="1" />
+    <End Role="E34" Type="InheritanceDepth4Model.Store.E00Set_E34" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E22">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E34">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E35_inherits_E22">
+    <End Role="E22" Type="InheritanceDepth4Model.Store.E00Set_E22" Multiplicity="1" />
+    <End Role="E35" Type="InheritanceDepth4Model.Store.E00Set_E35" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E22">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E35">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E36_inherits_E23">
+    <End Role="E23" Type="InheritanceDepth4Model.Store.E00Set_E23" Multiplicity="1" />
+    <End Role="E36" Type="InheritanceDepth4Model.Store.E00Set_E36" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E23">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E36">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_E37_inherits_E23">
+    <End Role="E23" Type="InheritanceDepth4Model.Store.E00Set_E23" Multiplicity="1" />
+    <End Role="E37" Type="InheritanceDepth4Model.Store.E00Set_E37" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="E23">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="E37">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="InheritanceDepth4Model" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="InheritanceDepth4ModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="E00Set" EntityType="InheritanceDepth4Model.E00" />
+          <EntitySet Name="OSet" EntityType="InheritanceDepth4Model.O" />
+          <AssociationSet Name="OE00" Association="InheritanceDepth4Model.OE00">
+            <End Role="O" EntitySet="OSet" />
+            <End Role="E00" EntitySet="E00Set" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="E00" Abstract="true">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="O" Relationship="InheritanceDepth4Model.OE00" FromRole="E00" ToRole="O" />
+          <Property Type="Int32" Name="OId" Nullable="false" />
+        </EntityType>
+        <EntityType Name="E10" BaseType="InheritanceDepth4Model.E00" Abstract="true" />
+        <EntityType Name="E11" BaseType="InheritanceDepth4Model.E00" Abstract="true" />
+        <EntityType Name="E20" BaseType="InheritanceDepth4Model.E10" Abstract="true" />
+        <EntityType Name="E21" BaseType="InheritanceDepth4Model.E10" Abstract="true" />
+        <EntityType Name="E22" BaseType="InheritanceDepth4Model.E11" Abstract="true" />
+        <EntityType Name="E23" BaseType="InheritanceDepth4Model.E11" Abstract="true" />
+        <EntityType Name="E30" BaseType="InheritanceDepth4Model.E20" />
+        <EntityType Name="E31" BaseType="InheritanceDepth4Model.E20" />
+        <EntityType Name="E32" BaseType="InheritanceDepth4Model.E21" />
+        <EntityType Name="E33" BaseType="InheritanceDepth4Model.E21" />
+        <EntityType Name="E34" BaseType="InheritanceDepth4Model.E22" />
+        <EntityType Name="E35" BaseType="InheritanceDepth4Model.E22" />
+        <EntityType Name="E36" BaseType="InheritanceDepth4Model.E23" />
+        <EntityType Name="E37" BaseType="InheritanceDepth4Model.E23" />
+        <EntityType Name="O">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="E00Set" Relationship="InheritanceDepth4Model.OE00" FromRole="O" ToRole="E00" />
+        </EntityType>
+        <Association Name="OE00">
+          <End Type="InheritanceDepth4Model.O" Role="O" Multiplicity="1" />
+          <End Type="InheritanceDepth4Model.E00" Role="E00" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="O">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="E00">
+              <PropertyRef Name="OId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InheritanceDepth4ModelStoreContainer" CdmEntityContainer="InheritanceDepth4ModelContainer">
+    <EntitySetMapping Name="E00Set">
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E00)">
+        <MappingFragment StoreEntitySet="E00Set">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OId" ColumnName="OId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E10)">
+        <MappingFragment StoreEntitySet="E00Set_E10">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E11)">
+        <MappingFragment StoreEntitySet="E00Set_E11">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E20)">
+        <MappingFragment StoreEntitySet="E00Set_E20">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E21)">
+        <MappingFragment StoreEntitySet="E00Set_E21">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E22)">
+        <MappingFragment StoreEntitySet="E00Set_E22">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E23)">
+        <MappingFragment StoreEntitySet="E00Set_E23">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E30)">
+        <MappingFragment StoreEntitySet="E00Set_E30">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E31)">
+        <MappingFragment StoreEntitySet="E00Set_E31">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E32)">
+        <MappingFragment StoreEntitySet="E00Set_E32">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E33)">
+        <MappingFragment StoreEntitySet="E00Set_E33">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E34)">
+        <MappingFragment StoreEntitySet="E00Set_E34">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E35)">
+        <MappingFragment StoreEntitySet="E00Set_E35">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E36)">
+        <MappingFragment StoreEntitySet="E00Set_E36">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.E37)">
+        <MappingFragment StoreEntitySet="E00Set_E37">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSet">
+      <EntityTypeMapping TypeName="IsTypeOf(InheritanceDepth4Model.O)">
+        <MappingFragment StoreEntitySet="OSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="InheritanceDepth4Model" ZoomLevel="57" xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E00" Width="1.5" PointX="4.125" PointY="9" Height="1.4279589843749996" />
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E10" Width="1.5" PointX="10.5" PointY="11.125" Height="0.93491699218749957" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E10" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.875" PointY="10.427958984375" />
+          <ConnectorPoint PointX="4.875" PointY="10.75" />
+          <ConnectorPoint PointX="11.25" PointY="10.75" />
+          <ConnectorPoint PointX="11.25" PointY="11.125" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E11" Width="1.5" PointX="19.5" PointY="11.125" Height="0.93491699218749957" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E11" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.875" PointY="10.427958984375" />
+          <ConnectorPoint PointX="4.875" PointY="10.75" />
+          <ConnectorPoint PointX="20.25" PointY="10.75" />
+          <ConnectorPoint PointX="20.25" PointY="11.125" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E20" Width="1.5" PointX="8.25" PointY="12.875" Height="0.93491699218749957" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E20" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.25" PointY="12.0599169921875" />
+          <ConnectorPoint PointX="11.25" PointY="12.5" />
+          <ConnectorPoint PointX="9" PointY="12.5" />
+          <ConnectorPoint PointX="9" PointY="12.875" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E21" Width="1.5" PointX="12.75" PointY="12.875" Height="0.93491699218749957" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E21" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.25" PointY="12.0599169921875" />
+          <ConnectorPoint PointX="11.25" PointY="12.5" />
+          <ConnectorPoint PointX="13.5" PointY="12.5" />
+          <ConnectorPoint PointX="13.5" PointY="12.875" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E22" Width="1.5" PointX="17.25" PointY="12.875" Height="0.93491699218749957" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E22" ManuallyRouted="false">
+          <ConnectorPoint PointX="20.25" PointY="12.0599169921875" />
+          <ConnectorPoint PointX="20.25" PointY="12.5" />
+          <ConnectorPoint PointX="18" PointY="12.5" />
+          <ConnectorPoint PointX="18" PointY="12.875" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E23" Width="1.5" PointX="21.75" PointY="12.875" Height="0.93491699218749957" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E23" ManuallyRouted="false">
+          <ConnectorPoint PointX="20.25" PointY="12.0599169921875" />
+          <ConnectorPoint PointX="20.25" PointY="12.5" />
+          <ConnectorPoint PointX="22.5" PointY="12.5" />
+          <ConnectorPoint PointX="22.5" PointY="12.875" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E30" Width="1.5" PointX="7.125" PointY="14.5" Height="0.93491699218749957" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E30" ManuallyRouted="false">
+          <ConnectorPoint PointX="9" PointY="13.8099169921875" />
+          <ConnectorPoint PointX="9" PointY="14.125" />
+          <ConnectorPoint PointX="7.875" PointY="14.125" />
+          <ConnectorPoint PointX="7.875" PointY="14.5" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E31" Width="1.5" PointX="9.375" PointY="14.5" Height="0.93491699218749957" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E31" ManuallyRouted="false">
+          <ConnectorPoint PointX="9" PointY="13.8099169921875" />
+          <ConnectorPoint PointX="9" PointY="14.125" />
+          <ConnectorPoint PointX="10.125" PointY="14.125" />
+          <ConnectorPoint PointX="10.125" PointY="14.5" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E32" Width="1.5" PointX="13.875" PointY="14.5" Height="0.93491699218749957" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E32" ManuallyRouted="false">
+          <ConnectorPoint PointX="13.5" PointY="13.8099169921875" />
+          <ConnectorPoint PointX="13.5" PointY="14.125" />
+          <ConnectorPoint PointX="14.625" PointY="14.125" />
+          <ConnectorPoint PointX="14.625" PointY="14.5" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E33" Width="1.5" PointX="11.625" PointY="14.5" Height="0.93491699218749957" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E33" ManuallyRouted="false">
+          <ConnectorPoint PointX="13.5" PointY="13.8099169921875" />
+          <ConnectorPoint PointX="13.5" PointY="14.125" />
+          <ConnectorPoint PointX="12.375" PointY="14.125" />
+          <ConnectorPoint PointX="12.375" PointY="14.5" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E34" Width="1.5" PointX="18.375" PointY="14.5" Height="0.93491699218750313" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E34" ManuallyRouted="false">
+          <ConnectorPoint PointX="18" PointY="13.8099169921875" />
+          <ConnectorPoint PointX="18" PointY="14.125" />
+          <ConnectorPoint PointX="19.125" PointY="14.125" />
+          <ConnectorPoint PointX="19.125" PointY="14.5" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E35" Width="1.5" PointX="16.125" PointY="14.5" Height="0.93491699218750313" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E35" ManuallyRouted="false">
+          <ConnectorPoint PointX="18" PointY="13.8099169921875" />
+          <ConnectorPoint PointX="18" PointY="14.125" />
+          <ConnectorPoint PointX="16.875" PointY="14.125" />
+          <ConnectorPoint PointX="16.875" PointY="14.5" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E36" Width="1.5" PointX="22.875" PointY="14.5" Height="0.93491699218750313" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E36" ManuallyRouted="false">
+          <ConnectorPoint PointX="22.5" PointY="13.8099169921875" />
+          <ConnectorPoint PointX="22.5" PointY="14.125" />
+          <ConnectorPoint PointX="23.625" PointY="14.125" />
+          <ConnectorPoint PointX="23.625" PointY="14.5" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.E37" Width="1.5" PointX="20.625" PointY="14.5" Height="0.93491699218750313" />
+        <InheritanceConnector EntityType="InheritanceDepth4Model.E37" ManuallyRouted="false">
+          <ConnectorPoint PointX="22.5" PointY="13.8099169921875" />
+          <ConnectorPoint PointX="22.5" PointY="14.125" />
+          <ConnectorPoint PointX="21.375" PointY="14.125" />
+          <ConnectorPoint PointX="21.375" PointY="14.5" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="InheritanceDepth4Model.O" Width="1.5" PointX="1.875" PointY="9.125" Height="1.2636116536458317" />
+        <AssociationConnector Association="InheritanceDepth4Model.OE00">
+          <ConnectorPoint PointX="3.375" PointY="9.7568058268229159" />
+          <ConnectorPoint PointX="4.125" PointY="9.7568058268229159" />
+        </AssociationConnector>
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
