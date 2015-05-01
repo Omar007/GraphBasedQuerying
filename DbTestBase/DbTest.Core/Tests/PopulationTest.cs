@@ -1,4 +1,4 @@
-﻿using PerformanceFramework;
+using PerformanceFramework;
 
 namespace DbTest.Core.Tests
 {

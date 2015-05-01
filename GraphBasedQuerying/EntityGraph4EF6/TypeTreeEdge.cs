@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using EntityGraph;
 
 namespace EntityGraph4EF6

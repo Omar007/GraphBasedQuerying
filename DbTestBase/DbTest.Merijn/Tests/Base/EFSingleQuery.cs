@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
 using System.Linq;

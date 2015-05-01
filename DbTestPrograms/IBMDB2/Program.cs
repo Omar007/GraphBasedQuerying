@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using DbTest.Core;
 using IBMDB2.DbHelpers;
 

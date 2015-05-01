@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Text;
 using EntityGraph4EF6.Mapping;
 using EntityGraph4EF6.SQL;

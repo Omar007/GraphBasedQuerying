@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data.EntityClient;
 using System.Data.SqlClient;
 using DbTest.Core;

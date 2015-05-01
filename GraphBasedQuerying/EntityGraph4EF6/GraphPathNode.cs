@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data.Entity;
 using EntityGraph;
 using EntityGraph4EF6.Mapping;

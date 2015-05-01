@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # Graph-Based Querying
 
 Code associated with the thesis written by Omar Pakker at the University of Amsterdam.  

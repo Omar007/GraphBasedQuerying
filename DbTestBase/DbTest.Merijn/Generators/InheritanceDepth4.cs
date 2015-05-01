@@ -1,4 +1,4 @@
-﻿using DbTest.Core;
+using DbTest.Core;
 using InheritanceDepth4;
 
 namespace DbTest.Merijn.Generators

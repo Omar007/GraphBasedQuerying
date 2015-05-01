@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using DbTest.Core;
 using Oracle.ManagedDataAccess.Client;
 

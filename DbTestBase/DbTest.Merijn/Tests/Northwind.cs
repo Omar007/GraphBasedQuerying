@@ -1,4 +1,4 @@
-﻿using DbTest.Core;
+using DbTest.Core;
 using EntityGraph.SQL;
 using NorthwindModel;
 

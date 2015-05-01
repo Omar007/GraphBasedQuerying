@@ -1,4 +1,4 @@
-﻿using System.Data.Objects;
+using System.Data.Objects;
 using DbTest.Core;
 using InheritanceDepth5WideAssoc1;
 

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using DbTest.Core;
 using MySql.Data.MySqlClient;
 

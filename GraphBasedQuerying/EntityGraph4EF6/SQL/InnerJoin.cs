@@ -1,4 +1,4 @@
-﻿
+
 namespace EntityGraph4EF6.SQL
 {
     internal class InnerJoin : Join

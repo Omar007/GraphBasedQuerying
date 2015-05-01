@@ -1,4 +1,4 @@
-﻿using System.Data.Objects;
+using System.Data.Objects;
 using System.Data.Objects.DataClasses;
 using DbTest.Core;
 using DbTest.Core.Tests;

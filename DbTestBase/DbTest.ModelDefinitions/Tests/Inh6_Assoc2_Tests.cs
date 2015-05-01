@@ -1,4 +1,4 @@
-﻿using System.Data.Entity;
+using System.Data.Entity;
 using System.Linq;
 using DbTest.Core;
 using DbTest.ModelDefinitions.Models.Inh6_Assoc2;

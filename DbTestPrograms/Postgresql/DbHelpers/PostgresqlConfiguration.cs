@@ -1,4 +1,4 @@
-﻿using System.Data.Entity;
+using System.Data.Entity;
 using System.Linq;
 using System.Reflection;
 using DbTest.ModelDefinitions.Generators;

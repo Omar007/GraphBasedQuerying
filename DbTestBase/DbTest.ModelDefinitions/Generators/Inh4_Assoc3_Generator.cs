@@ -1,4 +1,4 @@
-﻿using DbTest.Core;
+using DbTest.Core;
 using DbTest.ModelDefinitions.Models.Inh4_Assoc3;
 
 namespace DbTest.ModelDefinitions.Generators

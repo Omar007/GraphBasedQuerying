@@ -1,4 +1,4 @@
-﻿
+
 namespace DbTest.Core
 {
     public class Population

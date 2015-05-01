@@ -1,4 +1,4 @@
-﻿using System.Data.Entity;
+using System.Data.Entity;
 
 namespace DbTest.ModelDefinitions.Models.Inh4_Assoc2
 {

@@ -1,4 +1,4 @@
-﻿
+
 namespace EntityGraph.Test
 {
     public class SimpleData
