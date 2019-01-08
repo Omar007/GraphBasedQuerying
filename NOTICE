@@ -1,0 +1,12 @@
+Graph-Based Querying
+Copyright 2019 UvA and Omar Pakker
+
+This project was developed by Omar Pakker at the University of Amsterdam
+(UvA) as part of a MSc Thesis.
+
+This project is based on the work around this subject by Merijn de Jonge.
+http://www.codeproject.com/Articles/247254/Improving-Entity-Framework-Query-Performance-Using
+
+This project includes an 'Extras' syntax-only demo implementation,
+which uses code developed by LoreSoft.
+https://github.com/loresoft/EntityFramework.Extended
